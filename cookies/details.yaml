@@ -1,8 +1,8 @@
 - name: Chocolate Chip Cookie
   description: A classic cookie filled with chocolate chips.
   price: 2.5
-  image: images/choco.jpeg
+  image: cookies/images/choco.jpeg
 - name: Oatmeal Raisin Cookie
   description: Chewy cookies with oatmeal and raisins.
   price: 2.0
-  image: images/oatmeal.png
+  image: cookies/images/oatmeal.png
