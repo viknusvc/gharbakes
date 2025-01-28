@@ -107,8 +107,16 @@
         }
 
         function addToCart(name, image, price) {
-            cart.push({ name, image, price });
-            alert(`${name} added to cart!`);
+            // Check if the item is already in the cart
+            const existingItem = cart.find(item => item.name === name);
+
+            if (existingItem) {
+                alert(`${name} is already in your cart!`);
+            } else {
+                // If the item is not in the cart, add it
+                cart.push({ name, image, price });
+                alert(`${name} added to cart!`);
+            }
         }
 
         function viewCart() {
