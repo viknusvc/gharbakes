@@ -15,7 +15,7 @@
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
-            padding-bottom: 80px; /* To avoid overlap with fixed buttons */
+            padding-bottom: 80px; /* Add padding to avoid overlap with fixed buttons */
         }
         header {
             background-color: #f8b400;
@@ -114,12 +114,6 @@
             display: flex;
             justify-content: center;
             z-index: 10; /* Ensure buttons are above other content */
-        }
-        .bottom-buttons-container {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 20px;
         }
     </style>
     <script>
@@ -223,7 +217,6 @@
                     cartContainer.appendChild(cartItem);
                 });
                 document.getElementById('whatsappButton').style.display = 'block';
-                document.getElementById('clearCartButton').style.display = 'block';
             }
         }
 
@@ -256,11 +249,9 @@
 
     <div class="cart" id="cartItems" style="display:none;">
         <!-- Cart content will be injected here -->
+        <button onclick="clearCart()">Clear Cart</button>
     </div>
-    <div id="whatsappAndClearButtons" style="display:none;" class="bottom-buttons-container">
-        <button onclick="clearCart()" id="clearCartButton" style="display:none;">Clear Cart</button>
-        <button id="whatsappButton" onclick="sendToWhatsApp()" style="display:none;">Send to WhatsApp</button>
-    </div>
+    <button id="whatsappButton" onclick="sendToWhatsApp()" style="display:none;">Send to WhatsApp</button>
 
     <!-- Bottom buttons for easy navigation -->
     <div class="fixed-buttons">
