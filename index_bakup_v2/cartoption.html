@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale: 1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Bakery Catalog</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml/dist/js-yaml.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -63,60 +64,41 @@
         .card p {
             color: #666;
         }
-        .quantity {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 1em 0;
-        }
-        .quantity button {
-            padding: 0.5em;
-            font-size: 1.2em;
-            background-color: #f8b400;
-            border: none;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .quantity input {
-            width: 60px;
-            padding: 0.5em;
-            font-size: 1.2em;
-            text-align: center;
-            border: 1px solid #ddd;
-            margin: 0 10px;
+        #cartItems {
+            display: none;
+            padding: 1em;
+            text-align: left;
         }
         .cart-item {
             display: flex;
-            justify-content: space-between;
-            margin: 1em;
-            padding: 1em;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            align-items: center;
+            margin-bottom: 1em;
         }
         .cart-item img {
-            width: 50px;
-            margin-right: 10px;
+            margin-right: 1em;
         }
-        .cart-item p {
-            margin: 0;
-        }
-        .cart {
+        #whatsappButton {
             display: none;
+            margin-top: 1em;
         }
     </style>
+</head>
+<body>
+    <header>Gharbakes - We are Home Baker</header>
+    <div class="buttons">
+        <button onclick="loadCategory('cookies')">Cookies</button>
+        <button onclick="loadCategory('cakes')">Cakes</button>
+        <button onclick="viewCart()">View Cart</button>
+    </div>
+    <div class="gallery" id="gallery"></div>
+    <div id="cartItems"></div>
+    <button id="whatsappButton" onclick="sendCartToWhatsapp()">Send to WhatsApp</button>
+
     <script>
-        let cart = []; // Array to store cart items
+        // Cart to hold selected items
+        let cart = [];
 
-        document.addEventListener("contextmenu", (event) => event.preventDefault());
-
-        document.addEventListener("keydown", (event) => {
-            if (event.ctrlKey && (event.key === "s" || event.key === "u" || event.key === "p")) {
-                event.preventDefault();
-            }
-        });
-
+        // Load category data and display items
         async function loadCategory(category) {
             try {
                 const response = await axios.get(`${category}/details.yaml`);
@@ -126,14 +108,16 @@
                 console.error('Error loading data:', error);
                 document.getElementById('gallery').innerHTML = '<p>Error loading items. Please try again later.</p>';
             }
+
             // Show the gallery and hide the cart
             document.getElementById('gallery').style.display = 'grid'; 
             document.getElementById('cartItems').style.display = 'none';
         }
 
+        // Display items in the gallery
         function displayItems(items) {
             const gallery = document.getElementById('gallery');
-            gallery.innerHTML = '';
+            gallery.innerHTML = ''; // Clear existing items
             items.forEach(item => {
                 const card = document.createElement('div');
                 card.className = 'card';
@@ -142,53 +126,38 @@
                     <h3>${item.name}</h3>
                     <p>${item.description}</p>
                     <p>Price: $${item.price}</p>
-                    <div class="quantity">
-                        <button onclick="adjustQuantity('${item.name}', -0.25)">-</button>
-                        <input type="text" id="qty-${item.name}" value="0.25" readonly>
-                        <button onclick="adjustQuantity('${item.name}', 0.25)">+</button>
-                    </div>
-                    <button onclick="addToCart('${item.name}', '${item.image}', ${item.price}, '${item.name}')">Add to Cart</button>
+                    <label>Quantity (250g increments): </label>
+                    <input type="number" value="1" step="0.25" min="1" id="quantity-${item.name}" style="width: 60px;">
+                    <button onclick="addToCart('${item.name}', '${item.image}', ${item.price})">Add to Cart</button>
                 `;
                 gallery.appendChild(card);
             });
         }
 
-        function adjustQuantity(itemName, change) {
-            const qtyInput = document.getElementById(`qty-${itemName}`);
-            let currentQty = parseFloat(qtyInput.value);
-            currentQty += change;
-
-            // Ensure the quantity does not go below 0.25
-            if (currentQty < 0.25) {
-                currentQty = 0.25;
-            }
-
-            qtyInput.value = currentQty.toFixed(2);
-        }
-
-        function addToCart(name, image, price, itemName) {
-            const qtyInput = document.getElementById(`qty-${itemName}`);
-            const quantity = parseFloat(qtyInput.value);
-
-            // Check if the item is already in the cart
+        // Add item to the cart
+        function addToCart(name, image, price) {
+            const quantity = parseFloat(document.getElementById(`quantity-${name}`).value);
             const existingItem = cart.find(item => item.name === name);
 
             if (existingItem) {
-                alert(`${name} is already in your cart!`);
+                // If item already in cart, update quantity
+                existingItem.quantity += quantity;
             } else {
-                // If the item is not in the cart, add it with quantity
+                // Otherwise, add the item
                 cart.push({ name, image, price, quantity });
-                alert(`${name} added to cart with ${quantity} kg!`);
             }
+            alert(`${name} added to cart!`);
         }
 
+        // View the cart content
         function viewCart() {
             const gallery = document.getElementById('gallery');
             const cartContainer = document.getElementById('cartItems');
-            gallery.style.display = 'none'; // Hide the gallery when viewing the cart
-            cartContainer.style.display = 'block'; // Show the cart items
+            
+            gallery.style.display = 'none'; // Hide the gallery
+            cartContainer.style.display = 'block'; // Show the cart
 
-            cartContainer.innerHTML = ''; // Clear previous items
+            cartContainer.innerHTML = ''; // Clear previous cart content
 
             if (cart.length === 0) {
                 cartContainer.innerHTML = '<p>Your cart is empty.</p>';
@@ -210,29 +179,16 @@
             }
         }
 
-        function sendToWhatsApp() {
-            let message = 'Order Details:\n';
+        // Send cart items to WhatsApp
+        function sendCartToWhatsapp() {
+            let message = "Cart items:\n";
             cart.forEach(item => {
-                const totalPrice = (item.price * item.quantity).toFixed(2);
-                message += `${item.name} - ${item.quantity} kg - $${totalPrice}\n`;
+                message += `${item.name} - ${item.quantity} kg - $${(item.price * item.quantity).toFixed(2)}\n`;
             });
+
             const whatsappLink = `https://wa.me/?text=${encodeURIComponent(message)}`;
             window.open(whatsappLink, '_blank');
         }
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/js-yaml/dist/js-yaml.min.js"></script>
-</head>
-<body>
-    <header>Gharbakes - We Are Home Baker</header>
-    <div class="buttons">
-        <button onclick="loadCategory('cookies')">Cookies</button>
-        <button onclick="loadCategory('cakes')">Cakes</button>
-        <button onclick="viewCart()">View Cart</button>
-    </div>
-
-    <div class="gallery" id="gallery"></div>
-
-    <div class="cart" id="cartItems" style="display:none;"></div>
-    <button id="whatsappButton" onclick="sendToWhatsApp()" style="display:none;">Send to WhatsApp</button>
 </body>
 </html>

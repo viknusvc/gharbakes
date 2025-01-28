@@ -126,9 +126,6 @@
                 console.error('Error loading data:', error);
                 document.getElementById('gallery').innerHTML = '<p>Error loading items. Please try again later.</p>';
             }
-            // Show the gallery and hide the cart
-            document.getElementById('gallery').style.display = 'grid'; 
-            document.getElementById('cartItems').style.display = 'none';
         }
 
         function displayItems(items) {
