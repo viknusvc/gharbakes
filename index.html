@@ -49,7 +49,6 @@
             border-radius: 10px;
             padding: 1em;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            position: relative;
         }
         .card img {
             max-width: 100%;
@@ -64,12 +63,53 @@
         .card p {
             color: #666;
         }
-        .cart-section {
-            padding: 1em;
-            background-color: #f0f0f0;
-            text-align: left;
-        }
-        .cart-items {
-            margin: 1em 0;
-        }
     </style>
+    <script>
+        // Disable right-click context menu
+        document.addEventListener("contextmenu", (event) => event.preventDefault());
+
+        // Disable common keyboard shortcuts for saving or inspecting images
+        document.addEventListener("keydown", (event) => {
+            if (event.ctrlKey && (event.key === "s" || event.key === "u" || event.key === "p")) {
+                event.preventDefault();
+            }
+        });
+
+        async function loadCategory(category) {
+            try {
+                const response = await axios.get(`${category}/details.yaml`);
+                const data = jsyaml.load(response.data);
+                displayItems(data);
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('gallery').innerHTML = '<p>Error loading items. Please try again later.</p>';
+            }
+        }
+
+        function displayItems(items) {
+            const gallery = document.getElementById('gallery');
+            gallery.innerHTML = '';
+            items.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}">
+                    <h3>${item.name}</h3>
+                    <p>${item.description}</p>
+                    <p>Price: $${item.price}</p>
+                `;
+                gallery.appendChild(card);
+            });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml/dist/js-yaml.min.js"></script>
+</head>
+<body>
+    <header>Gharbakes - we are home baker</header>
+    <div class="buttons">
+        <button onclick="loadCategory('cookies')">Cookies</button>
+        <button onclick="loadCategory('cakes')">Cakes</button>
+    </div>
+    <div class="gallery" id="gallery"></div>
+</body>
+</html>
