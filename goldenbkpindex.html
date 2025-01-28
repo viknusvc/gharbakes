@@ -219,11 +219,6 @@
             const whatsappLink = `https://wa.me/?text=${encodeURIComponent(message)}`;
             window.open(whatsappLink, '_blank');
         }
-
-        function clearCart() {
-            cart = []; // Empty the cart array
-            viewCart(); // Refresh the cart display
-        }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml/dist/js-yaml.min.js"></script>
 </head>
@@ -237,17 +232,7 @@
 
     <div class="gallery" id="gallery"></div>
 
-    <div class="cart" id="cartItems" style="display:none;">
-        <!-- Cart content will be injected here -->
-        <button onclick="clearCart()">Clear Cart</button>
-    </div>
+    <div class="cart" id="cartItems" style="display:none;"></div>
     <button id="whatsappButton" onclick="sendToWhatsApp()" style="display:none;">Send to WhatsApp</button>
-
-    <!-- Bottom buttons for easy navigation -->
-    <div class="buttons" style="position: fixed; bottom: 20px; width: 100%; display: flex; justify-content: center;">
-        <button onclick="loadCategory('cookies')">Cookies</button>
-        <button onclick="loadCategory('cakes')">Cakes</button>
-        <button onclick="viewCart()">View Cart</button>
-    </div>
 </body>
 </html>
