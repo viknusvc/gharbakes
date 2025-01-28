@@ -160,7 +160,7 @@
             items.forEach(item => {
                 const card = document.createElement('div');
                 card.className = 'card';
-                card.innerHTML = ` 
+                card.innerHTML = `
                     <img src="${item.image}" alt="${item.name}">
                     <h3>${item.name}</h3>
                     <p>${item.description}</p>
@@ -217,7 +217,7 @@
                 cartContainer.innerHTML = '<p>Your cart is empty.</p>';
                 document.getElementById('whatsappAndClearButtons').style.display = 'none'; // Hide buttons if cart is empty
             } else {
-                cart.forEach((item, index) => {
+                cart.forEach(item => {
                     const cartItem = document.createElement('div');
                     cartItem.className = 'cart-item';
                     const totalPrice = (item.price * item.quantity).toFixed(2);
@@ -227,35 +227,11 @@
                             <p>${item.name} - ${item.quantity} kg</p>
                             <p>Price: $${totalPrice}</p>
                         </div>
-                        <div class="quantity">
-                            <button onclick="adjustCartQuantity(${index}, -0.25)">-</button>
-                            <input type="text" id="qty-${item.name}" value="${item.quantity}" readonly>
-                            <button onclick="adjustCartQuantity(${index}, 0.25)">+</button>
-                            <button onclick="removeItem(${index})">Remove</button>
-                        </div>
                     `;
                     cartContainer.appendChild(cartItem);
                 });
                 document.getElementById('whatsappAndClearButtons').style.display = 'flex'; // Show buttons when cart has items
             }
-        }
-
-        function adjustCartQuantity(index, change) {
-            let currentQty = cart[index].quantity;
-            currentQty += change;
-
-            // Ensure the quantity does not go below 0.25
-            if (currentQty < 0.25) {
-                currentQty = 0.25;
-            }
-
-            cart[index].quantity = currentQty.toFixed(2); // Update cart quantity
-            viewCart(); // Refresh the cart display
-        }
-
-        function removeItem(index) {
-            cart.splice(index, 1); // Remove the item from the cart array
-            viewCart(); // Refresh the cart display
         }
 
         function sendToWhatsApp() {
@@ -273,6 +249,7 @@
             viewCart(); // Refresh the cart display
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml/dist/js-yaml.min.js"></script>
 </head>
 <body>
     <header>Gharbakes - We Are Home Baker</header>
