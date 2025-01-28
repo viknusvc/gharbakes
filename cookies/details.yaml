@@ -1,8 +1,15 @@
+###
 - name: Chocolate Chip Cookie
   description: A classic cookie filled with chocolate chips.
   price: 2.5
   image: cookies/images/choco.jpeg
+###
 - name: Oatmeal Raisin Cookie
   description: Chewy cookies with oatmeal and raisins.
   price: 2.0
   image: cookies/images/oatmeal.png
+###
+- name: Jeera Cookie
+  description: Jeera Cookies made with maida
+  price: 250gm / 150 rs
+  image: cookies/images/jeera_cookies.jpg
