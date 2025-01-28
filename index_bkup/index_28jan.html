@@ -11,10 +11,6 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
         }
         header {
             background-color: #f8b400;
@@ -53,9 +49,6 @@
         .card img {
             max-width: 100%;
             border-radius: 10px;
-            pointer-events: none;
-            -webkit-user-drag: none;
-            user-drag: none;
         }
         .card h3 {
             margin: 0.5em 0;
@@ -64,17 +57,16 @@
             color: #666;
         }
     </style>
+</head>
+<body>
+    <header>Gharbakes - we are home baker</header>
+    <div class="buttons">
+        <button onclick="loadCategory('cookies')">Cookies</button>
+        <button onclick="loadCategory('cakes')">Cakes</button>
+    </div>
+    <div class="gallery" id="gallery"></div>
+
     <script>
-        // Disable right-click context menu
-        document.addEventListener("contextmenu", (event) => event.preventDefault());
-
-        // Disable common keyboard shortcuts for saving or inspecting images
-        document.addEventListener("keydown", (event) => {
-            if (event.ctrlKey && (event.key === "s" || event.key === "u" || event.key === "p")) {
-                event.preventDefault();
-            }
-        });
-
         async function loadCategory(category) {
             try {
                 const response = await axios.get(`${category}/details.yaml`);
@@ -103,13 +95,5 @@
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml/dist/js-yaml.min.js"></script>
-</head>
-<body>
-    <header>Gharbakes - we are home baker</header>
-    <div class="buttons">
-        <button onclick="loadCategory('cookies')">Cookies</button>
-        <button onclick="loadCategory('cakes')">Cakes</button>
-    </div>
-    <div class="gallery" id="gallery"></div>
 </body>
 </html>
