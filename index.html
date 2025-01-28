@@ -15,6 +15,7 @@
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
+            padding-bottom: 80px; /* Add padding to avoid overlap with fixed buttons */
         }
         header {
             background-color: #f8b400;
@@ -104,6 +105,15 @@
         }
         .cart {
             display: none;
+        }
+        .fixed-buttons {
+            position: fixed;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            z-index: 10; /* Ensure buttons are above other content */
         }
     </style>
     <script>
@@ -244,7 +254,7 @@
     <button id="whatsappButton" onclick="sendToWhatsApp()" style="display:none;">Send to WhatsApp</button>
 
     <!-- Bottom buttons for easy navigation -->
-    <div class="buttons" style="position: fixed; bottom: 20px; width: 100%; display: flex; justify-content: center;">
+    <div class="fixed-buttons">
         <button onclick="loadCategory('cookies')">Cookies</button>
         <button onclick="loadCategory('cakes')">Cakes</button>
         <button onclick="viewCart()">View Cart</button>
