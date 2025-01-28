@@ -121,6 +121,13 @@
             gap: 10px;
             margin-bottom: 20px;
         }
+        /* Ensuring the buttons appear together */
+        .cart-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
     </style>
     <script>
         let cart = []; // Array to store cart items
@@ -208,6 +215,7 @@
 
             if (cart.length === 0) {
                 cartContainer.innerHTML = '<p>Your cart is empty.</p>';
+                document.getElementById('whatsappAndClearButtons').style.display = 'none'; // Hide buttons if cart is empty
             } else {
                 cart.forEach(item => {
                     const cartItem = document.createElement('div');
@@ -222,8 +230,7 @@
                     `;
                     cartContainer.appendChild(cartItem);
                 });
-                document.getElementById('whatsappButton').style.display = 'block';
-                document.getElementById('clearCartButton').style.display = 'block';
+                document.getElementById('whatsappAndClearButtons').style.display = 'flex'; // Show buttons when cart has items
             }
         }
 
@@ -254,19 +261,14 @@
 
     <div class="gallery" id="gallery"></div>
 
-    <div class="cart" id="cartItems" style="display:none;">
-        <!-- Cart content will be injected here -->
-    </div>
-    <div id="whatsappAndClearButtons" style="display:none;" class="bottom-buttons-container">
-        <button onclick="clearCart()" id="clearCartButton" style="display:none;">Clear Cart</button>
-        <button id="whatsappButton" onclick="sendToWhatsApp()" style="display:none;">Send to WhatsApp</button>
-    </div>
+    <div class="cart" id="cartItems" style="display:none;"></div>
 
     <!-- Bottom buttons for easy navigation -->
     <div class="fixed-buttons">
-        <button onclick="loadCategory('cookies')">Cookies</button>
-        <button onclick="loadCategory('cakes')">Cakes</button>
-        <button onclick="viewCart()">View Cart</button>
+        <div class="cart-buttons" id="whatsappAndClearButtons" style="display:none;">
+            <button onclick="clearCart()" id="clearCartButton">Clear Cart</button>
+            <button id="whatsappButton" onclick="sendToWhatsApp()">Send to WhatsApp</button>
+        </div>
     </div>
 </body>
 </html>
