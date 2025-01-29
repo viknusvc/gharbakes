@@ -1,24 +1,24 @@
 - name: Cloud Whip Delight
   description: A classic cookie filled with chocolate chips.
   price: 400
-  image: cupcake/images/cc01_premium.JPG
+  image: cupcakes/images/cc01_premium.JPG
 
 - name: Cloud Kiss Vanilla Cupcake
   description: A classic cookie filled with chocolate chips.
   price: 400
-  image: cupcake/images/cc02_vanillacupcake.jpg
+  image: cupcakes/images/cc02_vanillacupcake.jpg
 
 - name: Cloud Kiss Chocolate Cupcake
   description: A classic cookie filled with chocolate chips.
   price: 400
-  image: cupcake/images/cc03_chocolatecupcake.jpg
+  image: cupcakes/images/cc03_chocolatecupcake.jpg
 
 - name: Cloud Kiss Chocolate Overload Cupcake
   description: A classic cookie filled with chocolate chips.
   price: 400
-  image: cupcake/images/cc04_chocolateoverloadcupcake.jpg
+  image: cupcakes/images/cc04_chocolateoverloadcupcake.jpg
 
 - name: Cloud Kiss Nutella Cupcake
   description: A classic cookie filled with chocolate chips.
   price: 400
-  image: cupcake/images/cc05_Nutellacupcake.jpg
+  image: cupcakes/images/cc05_Nutellacupcake.jpg
