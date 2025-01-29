@@ -255,10 +255,10 @@
         function sendToWhatsApp() {
             let message = 'Order Details:\n';
             cart.forEach(item => {
-                const totalPrice = (item.price * item.quantity).toFixed(2);
-                message += `${item.name} - ${item.quantity} kg - $${totalPrice}\n`;
+            const totalPrice = (item.price * item.quantity).toFixed(2);
+            message += `${item.name} - ${item.quantity} kg - $${totalPrice}\n`;
             });
-            const whatsappLink = `https://wa.me/?text=${encodeURIComponent(message)}`;
+            const whatsappLink = `https://wa.me/918095096561?text=${encodeURIComponent(message)}`;
             window.open(whatsappLink, '_blank');
         }
 
