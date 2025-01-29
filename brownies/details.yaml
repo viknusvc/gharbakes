@@ -1,7 +1,7 @@
 - name: Baby Almond Brownie
   description: A classic cookie filled with chocolate chips.
   price: 400
-  image: brownies/images/Bm01_MiniAlmond Brownie.jpg
+  image: brownies/images/Bm01_MiniAlmondBrownie.jpg
 
 name: Baby Hazenut Brownie
   description: A classic cookie filled with chocolate chips.
@@ -31,4 +31,4 @@ name: Baby Hazenut Brownie
   name: Marble Brownie
   description: A classic cookie filled with chocolate chips.
   price: 400
-  image: brownies/images/Br05_Marble Brownie.jpg
+  image: brownies/images/Br05_MarbleBrownie.jpg
