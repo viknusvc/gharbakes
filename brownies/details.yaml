@@ -3,32 +3,32 @@
   price: 400
   image: brownies/images/Bm01_MiniAlmondBrownie.jpg
 
-name: Baby Hazenut Brownie
+- name: Baby Hazelnut Brownie
   description: A classic cookie filled with chocolate chips.
   price: 280
   image: brownies/images/Bm02_miniHazenutBrownie.jpg
 
- name: Walnut Brownie
+- name: Walnut Brownie
   description: A classic cookie filled with chocolate chips.
   price: 280
   image: brownies/images/br01_WalnutBrownie.jpg
 
-  name: Nutella Brownie
+- name: Nutella Brownie
   description: A classic cookie filled with chocolate chips.
   price: 400
   image: brownies/images/Br02_NutellaBrownie.JPG
 
-  name: Almond Brownie
+- name: Almond Brownie
   description: A classic cookie filled with chocolate chips.
   price: 400
   image: brownies/images/Br03_AlmondBrownie.jpg
 
-  name: Hazenut Brownie
+- name: Hazelnut Brownie
   description: A classic cookie filled with chocolate chips.
   price: 400
   image: brownies/images/Br04_HazenutBrownie.jpg
 
-  name: Marble Brownie
+- name: Marble Brownie
   description: A classic cookie filled with chocolate chips.
   price: 400
   image: brownies/images/Br05_MarbleBrownie.jpg

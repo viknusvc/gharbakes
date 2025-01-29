@@ -1,86 +1,79 @@
-###
 - name: Karachi Cookie
   description: A classic cookie filled with chocolate chips.
   price: 2.5
   image: cookies/images/c09_KarachiCookies.jpg
-###
-- name: Ajwin Cookie
+
+- name: Ajwain Cookie
   description: Chewy cookies with oatmeal and raisins.
   price: 2.0
   image: cookies/images/co2_Ajwin_Cookies.jpg
-###
+
 - name: Jeera Cookie
-  description: Jeera Cookies made with maida
+  description: Jeera Cookies made with maida.
   price: 150
   image: cookies/images/co1_jeera_cookies.jpg
-  ###
+
 - name: Butter Cookie
-  description: Jeera Cookies made with maida
+  description: Classic buttery cookies made with premium ingredients.
   price: 150
   image: cookies/images/co3_ButterCookies.JPG
-  ###
+
 - name: Chocolate Cookie
-  description: Jeera Cookies made with maida
+  description: Rich chocolate-flavored cookies for chocolate lovers.
   price: 150
   image: cookies/images/co4_ChocolateCookies.jpg
-    ###
-- name: Ragichocolate Cookie
-  description: Jeera Cookies made with maida
+
+- name: Ragi Chocolate Cookie
+  description: A healthy twist with ragi and chocolate.
   price: 150
   image: cookies/images/co5_Ragichocolatecookies.jpg
-    ###
+
 - name: Coconut Cookie
-  description: Jeera Cookies made with maida
+  description: Crunchy coconut cookies with a tropical taste.
   price: 150
   image: cookies/images/co6_coconutcookies.jpg
-    ###
+
 - name: Millet Cookie
-  description: Jeera Cookies made with maida
+  description: A nutritious millet-based cookie.
   price: 150
-  image: cookies/images/co7_millet cookies.jpg
-    ###
+  image: cookies/images/co7_millet_cookies.jpg
+
 - name: Nuts Cookie
-  description: Jeera Cookies made with maida
+  description: Loaded with nuts for a crunchy texture.
   price: 150
   image: cookies/images/co7_Nutscookies.jpg
-    ###
+
 - name: Teether Cookie
-  description: Jeera Cookies made with maida
+  description: A soft, baby-friendly cookie.
   price: 150
-  image: cookies/images/\co8_Teethercookies.jpg
-    ###
+  image: cookies/images/co8_Teethercookies.jpg
+
 - name: Wheat Cookie
-  description: Jeera Cookies made with maida
+  description: Made with whole wheat for a healthier choice.
   price: 150
   image: cookies/images/co10_WheatCookies.jpg
-    ###
+
 - name: Brownie Cookie
-  description: Jeera Cookies made with maida
+  description: A rich brownie-flavored cookie.
   price: 150
   image: cookies/images/ec1_Brownie_Cookies.JPG
-    ###
+
 - name: ChocoChip Cookie
-  description: Jeera Cookies made with maida
+  description: Classic cookies filled with chocolate chips.
   price: 150
   image: cookies/images/ec2_ChocoChipcookies.JPG
-    ###
-- name: Hazenut ChocoChip Cookie
-  description: Jeera Cookies made with maida
+
+- name: Hazelnut ChocoChip Cookie
+  description: Chocolate chip cookies with a hazelnut twist.
   price: 150
   image: cookies/images/ec3_hazenutcookies.JPG
-  ###
+
 - name: Wheat ChocoChip Cookie
-  description: Jeera Cookies made with maida
+  description: Whole wheat cookies loaded with chocolate chips.
   price: 150
   image: cookies/images/ec4_Wheatchocohipcookies.jpg
-  ###
+
 - name: Double ChocoChip Cookie
-  description: Jeera Cookies made with maida
+  description: Extra chocolatey cookies with double choco chips.
   price: 150
   image: cookies/images/ec5_doublechochipwalnutcookies.jpg
-  
--
-  
-  
-  
-

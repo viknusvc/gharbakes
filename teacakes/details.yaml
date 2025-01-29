@@ -1,49 +1,49 @@
 - name: Almond Flour Chai Bliss Cake
   description: A classic cookie filled with chocolate chips.
   price: 400
-  image: teacake/images/sp01_almondflourcake.JPG
+  image: teacakes/images/sp01_almondflourcake.JPG
 
-name: Carrot Chai Bliss Cake
+- name: Carrot Chai Bliss Cake
   description: A classic cookie filled with chocolate chips.
   price: 400
-  image: teacake/images/sp02_carrotcake.jpg
+  image: teacakes/images/sp02_carrotcake.jpg
 
- name: Chocolate Chai Bliss Cake
+- name: Chocolate Chai Bliss Cake
   description: A classic cookie filled with chocolate chips.
   price: 400
-  image: teacake/images/sp03_chocolatecake.JPG
+  image: teacakes/images/sp03_chocolatecake.JPG
 
-  name: Strawberry Chai Bliss Cake
+- name: Strawberry Chai Bliss Cake
   description: A classic cookie filled with chocolate chips.
   price: 400
-  image: teacake/images/Sp04_Strawberrycake.JPG
+  image: teacakes/images/sp04_Strawberrycake.JPG
 
-  name: Pista Chai Bliss Cake
+- name: Pista Chai Bliss Cake
   description: A classic cookie filled with chocolate chips.
   price: 400
-  image: teacake/images/sp05_Pistacake.JPG
+  image: teacakes/images/sp05_Pistacake.JPG
 
-  name: Walnut Chai Bliss Cake
+- name: Walnut Chai Bliss Cake
   description: A classic cookie filled with chocolate chips.
   price: 400
-  image: teacake/images/Sp06_Walnutcake.JPG
+  image: teacakes/images/sp06_Walnutcake.JPG
 
-  name: Plain Chai Bliss Cake
+- name: Plain Chai Bliss Cake
   description: A classic cookie filled with chocolate chips.
   price: 400
-  image: teacake/images/sp07_Plain.JPG
-  
-  name: Almond Chai Bliss Cake
-  description: A classic cookie filled with chocolate chips.
-  price: 400
-  image: teacake/images/sp08_almondcake.jpg
+  image: teacakes/images/sp07_Plain.JPG
 
-  name: Nuts Chai Bliss Cake
+- name: Almond Chai Bliss Cake
   description: A classic cookie filled with chocolate chips.
   price: 400
-  image: teacake/images/sp09_Nutscake.jpg
+  image: teacakes/images/sp08_almondcake.jpg
 
-  name: Wheat Dates Chai Bliss Cake
+- name: Nuts Chai Bliss Cake
   description: A classic cookie filled with chocolate chips.
   price: 400
-  image: teacake/images/sp10_Wheatsdatescake.jpg
+  image: teacakes/images/sp09_Nutscake.jpg
+
+- name: Wheat Dates Chai Bliss Cake
+  description: A classic cookie filled with chocolate chips.
+  price: 400
+  image: teacakes/images/sp10_Wheatsdatescake.jpg
