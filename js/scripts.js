@@ -24,60 +24,73 @@ let cart = [];
         function displayItems(items) {
             const gallery = document.getElementById('gallery');
             gallery.innerHTML = '';
+        
             items.forEach(item => {
                 const card = document.createElement('div');
                 card.className = 'card';
+        
+                let isCupcake = item.name.toLowerCase().includes("cupcake");
+                let quantityStep = isCupcake ? 6 : 0.25; 
+                let minQuantity = isCupcake ? 6 : 0.25;
+        
                 card.innerHTML = `
                     <img src="${item.image}" alt="${item.name}">
                     <h3>${item.name}</h3>
                     <p>${item.description}</p>
-                    <p>Price: ₹${item.price}</p>
+                    <p>Price: ₹${item.price} ${isCupcake ? 'per 6 pcs' : 'per 250g'}</p>
                     <div class="quantity">
-                        <button onclick="adjustQuantity('${item.name}', -0.25)">-</button>
-                        <input type="text" id="qty-${item.name}" value="0.25" readonly>
-                        <button onclick="adjustQuantity('${item.name}', 0.25)">+</button>
+                        <button onclick="adjustQuantity('${item.name}', -${quantityStep})">-</button>
+                        <input type="text" id="qty-${item.name}" value="${minQuantity}" readonly>
+                        <button onclick="adjustQuantity('${item.name}', ${quantityStep})">+</button>
                     </div>
-                    <button onclick="addToCart('${item.name}', '${item.image}', ${item.price}, '${item.name}')">Add to Cart</button>
+                    <button onclick="addToCart('${item.name}', '${item.image}', ${item.price}, ${isCupcake})">Add to Cart</button>
                 `;
                 gallery.appendChild(card);
             });
         }
+        
 
         function adjustQuantity(itemName, change) {
             const qtyInput = document.getElementById(`qty-${itemName}`);
             let currentQty = parseFloat(qtyInput.value);
+        
+            let isCupcake = itemName.toLowerCase().includes("cupcake");
+            let minQuantity = isCupcake ? 6 : 0.25;
+        
             currentQty += change;
-
-            if (currentQty < 0.25) {
-                currentQty = 0.25;
+        
+            if (currentQty < minQuantity) {
+                currentQty = minQuantity;
             }
-
-            qtyInput.value = currentQty.toFixed(2);
+        
+            qtyInput.value = currentQty;
         }
+        
 
 
-        function addToCart(name, image, price, itemName) {
-            const qtyInput = document.getElementById(`qty-${itemName}`);
+        function addToCart(name, image, price, isCupcake) {
+            const qtyInput = document.getElementById(`qty-${name}`);
             const quantity = parseFloat(qtyInput.value);
-
+        
             const existingItem = cart.find(item => item.name === name);
-
+        
             if (existingItem) {
                 alert(`${name} is already in your cart!`);
             } else {
-                cart.push({ name, image, price, quantity });
-                alert(`${name} added to cart with ${quantity} kg!`);
+                cart.push({ name, image, price, quantity, isCupcake });
+                alert(`${name} added to cart with ${quantity} ${isCupcake ? "pcs" : "kg"}!`);
             }
         }
+        
 
         function viewCart() {
             const gallery = document.getElementById('gallery');
             const cartContainer = document.getElementById('cartItems');
             gallery.style.display = 'none';
             cartContainer.style.display = 'block';
-
+        
             cartContainer.innerHTML = '';
-
+        
             if (cart.length === 0) {
                 cartContainer.innerHTML = '<p>Your cart is empty.</p>';
                 document.getElementById('whatsappAndClearButtons').style.display = 'none';
@@ -85,32 +98,43 @@ let cart = [];
                 cart.forEach((item, index) => {
                     const cartItem = document.createElement('div');
                     cartItem.className = 'cart-item';
-                    const totalPrice = (item.price * (item.quantity / 0.25)).toFixed(2);
+        
+                    let totalPrice = (item.isCupcake ? item.price * (item.quantity / 6) : item.price * (item.quantity / 0.25)).toFixed(2);
+                    let unitLabel = item.isCupcake ? "pcs" : "kg";
+                    let stepValue = item.isCupcake ? 6 : 0.25;
+        
                     cartItem.innerHTML = `
                         <img src="${item.image}" alt="${item.name}" width="50">
                         <div>
-                            <p>${item.name} - ₹${totalPrice}</p>
+                            <p>${item.name} - ${item.quantity} ${unitLabel} - ₹${totalPrice}</p>
                             <div class="quantity">
-                                <button onclick="updateCartQuantity(${index}, -0.25)">-</button>
-                                <input type="text" value="${item.quantity.toFixed(2)}" readonly id="cart-qty-${index}">
-                                <button onclick="updateCartQuantity(${index}, 0.25)">+</button>
+                                <button onclick="updateCartQuantity(${index}, -${stepValue})">-</button>
+                                <input type="text" value="${item.quantity}" readonly id="cart-qty-${index}">
+                                <button onclick="updateCartQuantity(${index}, ${stepValue})">+</button>
                             </div>
                         </div>
                         <button onclick="removeCartItem(${index})" class="remove">Remove</button>
                     `;
                     cartContainer.appendChild(cartItem);
                 });
+        
                 document.getElementById('whatsappAndClearButtons').style.display = 'flex';
             }
         }
-
+        
         function updateCartQuantity(index, change) {
-            cart[index].quantity += change;
-            if (cart[index].quantity < 0.25) {
-                cart[index].quantity = 0.25;
+            let cartItem = cart[index];
+            let minQuantity = cartItem.isCupcake ? 6 : 0.25;
+        
+            cartItem.quantity += change;
+        
+            if (cartItem.quantity < minQuantity) {
+                cartItem.quantity = minQuantity;
             }
+        
             viewCart();
         }
+        
 
         function removeCartItem(index) {
             cart.splice(index, 1);
