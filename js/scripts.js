@@ -10,7 +10,7 @@ document.addEventListener("keydown", (event) => {
 
 // Function to load a product category when "Check Products" is clicked
 async function loadCategory(category) {
-    // console.log(`Loading category: ${category}`); // Debugging
+    console.log(`Loading category: ${category}`); // Debugging
 
     try {
         const response = await axios.get(`data/${category}/details.yaml`);
@@ -27,7 +27,7 @@ async function loadCategory(category) {
     document.getElementById('whatsappAndClearButtons').style.display = 'none';
 
     // Debugging
-    // console.log("Category Loaded. Showing gallery.");
+    console.log("Category Loaded. Showing gallery.");
 }
 
 function displayItems(items) {
@@ -57,7 +57,7 @@ function displayItems(items) {
         gallery.appendChild(card);
     });
 
-    // console.log("Items displayed in gallery.");
+     console.log("Items displayed in gallery.");
 }
 
 // Adjust quantity for an item
