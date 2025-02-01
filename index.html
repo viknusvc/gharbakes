@@ -254,14 +254,20 @@
 
         function sendToWhatsApp() {
             let message = 'Order Details:\n';
+            let totalAmount = 0;
             cart.forEach(item => {
-            const totalPrice = (item.price * (item.quantity / 0.25)).toFixed(2);
-            message += `${item.name} - ${item.quantity.toFixed(2)} kg - ₹${totalPrice}\n`;
-            });
-            const whatsappLink = `https://wa.me/918095096561?text=${encodeURIComponent(message)}`;
-            window.open(whatsappLink, '_blank');
-        }
-
+                const totalPrice = (item.price * (item.quantity / 0.25)).toFixed(2);
+                totalAmount += parseFloat(totalPrice);
+                message += `${item.name} - ${item.quantity.toFixed(2)} kg - ₹${totalPrice}\n`;
+                });
+                message += `\nTotal Amount: ₹${totalAmount.toFixed(2)}`;
+                const whatsappLink = `https://wa.me/918095096561?text=${encodeURIComponent(message)}`;
+                // Auto-redirect with a 2-second delay
+                setTimeout(() => {
+                window.location.href = whatsappLink;
+                }, 2000); // 2000ms = 2 seconds
+                alert('Redirecting to WhatsApp...');
+                }
         function clearCart() {
             cart = [];
             viewCart();
