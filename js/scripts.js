@@ -9,7 +9,7 @@ let cart = [];
 
         async function loadCategory(category) {
             try {
-                const response = await axios.get(`${category}/details.yaml`);
+                const response = await axios.get(`data/${category}/details.yaml`);
                 const data = jsyaml.load(response.data);
                 displayItems(data);
             } catch (error) {
