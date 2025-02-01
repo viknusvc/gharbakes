@@ -220,7 +220,7 @@
                 cart.forEach((item, index) => {
                     const cartItem = document.createElement('div');
                     cartItem.className = 'cart-item';
-                    const totalPrice = (item.price * item.quantity).toFixed(2);
+                    const totalPrice = (item.price * (item.quantity / 0.25)).toFixed(2);
                     cartItem.innerHTML = `
                         <img src="${item.image}" alt="${item.name}" width="50">
                         <div>
