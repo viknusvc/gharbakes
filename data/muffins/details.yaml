@@ -1,19 +1,19 @@
 - name: Vanilla Muffin
   description: A classic cookie filled with chocolate chips.
   price: 400
-  image: muffins/images/Mu01_Vanilla.jpg
+  image: data/muffins/images/Mu01_Vanilla.jpg
 
 - name: Banana Muffin
   description: A classic cookie filled with chocolate chips.
   price: 400
-  image: muffins/images/MU02_Bananamuffin.jpg
+  image: data/muffins/images/MU02_Bananamuffin.jpg
 
 - name: Chocolate Muffin
   description: A classic cookie filled with chocolate chips.
   price: 400
-  image: muffins/images/mu03_Chocolatemuffin.jpg
+  image: data/muffins/images/mu03_Chocolatemuffin.jpg
 
 - name: Marble Muffin
   description: A classic cookie filled with chocolate chips.
   price: 400
-  image: muffins/images/mu04_MarbleMuffin.jpg
+  image: data/muffins/images/mu04_MarbleMuffin.jpg

@@ -1,104 +1,104 @@
 - name: Vanilla
   description: A classic cookie filled with chocolate chips.
   price: 200
-  image: cakes/images/Bc01_vanilla.jpg
+  image: data/cakes/images/Bc01_vanilla.jpg
 
 - name: Strawberry
   description: A classic cookie filled with chocolate chips.
   price: 200
-  image: cakes/images/Bc02_Starwberry.jpg
+  image: data/cakes/images/Bc02_Starwberry.jpg
 
 - name: Chocolate
   description: A classic cookie filled with chocolate chips.
   price: 205
-  image: cakes/images/Bc03_Chocolate.jpg
+  image: data/cakes/images/Bc03_Chocolate.jpg
 
 - name: Buttercream
   description: A classic cookie filled with chocolate chips.
   price: 250
-  image: cakes/images/Btc01_Buttercream.jpg
+  image: data/cakes/images/Btc01_Buttercream.jpg
 
 - name: Black Forest Cake
   description: A classic cookie filled with chocolate chips.
   price: 225
-  image: cakes/images/C01_BlackForestCake.jpg
+  image: data/cakes/images/C01_BlackForestCake.jpg
 
 - name: Butterscotch
   description: A classic cookie filled with chocolate chips.
   price: 225
-  image: cakes/images/c02_Butterscotch.JPG
+  image: data/cakes/images/c02_Butterscotch.JPG
 
 - name: Chocolate Ganache
   description: A classic cookie filled with chocolate chips.
   price: 245
-  image: cakes/images/C03_ChocolateGanach.jpg
+  image: data/cakes/images/C03_ChocolateGanach.jpg
 
 - name: Chocolate Overload Cake
   description: A classic cookie filled with chocolate chips.
   price: 245
-  image: cakes/images/c04_Chocolateoverloadcake.jpg
+  image: data/cakes/images/c04_Chocolateoverloadcake.jpg
 
 - name: Dripping Cake
   description: A classic cookie filled with chocolate chips.
   price: 225
-  image: cakes/images/c05_Drippingcake.jpg
+  image: data/cakes/images/c05_Drippingcake.jpg
 
 - name: Letter Cake
   description: A classic cookie filled with chocolate chips.
   price: 225
-  image: cakes/images/c06_Lettercake.jpg
+  image: data/cakes/images/c06_Lettercake.jpg
 
 - name: Fruit Cake
   description: A classic cookie filled with chocolate chips.
   price: 250
-  image: cakes/images/c07_Fruitcake.jpg
+  image: data/cakes/images/c07_Fruitcake.jpg
 
 - name: Kitkat Cake
   description: A classic cookie filled with chocolate chips.
   price: 290
-  image: cakes/images/c08_Kitkatcake.jpg
+  image: data/cakes/images/c08_Kitkatcake.jpg
 
 - name: Red Velvet
   description: A classic cookie filled with chocolate chips.
   price: 245
-  image: cakes/images/c09_Redvelvet.jpg
+  image: data/cakes/images/c09_Redvelvet.jpg
 
 - name: Chocolate Cake
   description: A classic cookie filled with chocolate chips.
   price: 205
-  image: cakes/images/c10_chocolate.JPG
+  image: data/cakes/images/c10_chocolate.JPG
 
 - name: Flower Cake
   description: A classic cookie filled with chocolate chips.
   price: 220
-  image: cakes/images/c11_Flowercake.jpg
+  image: data/cakes/images/c11_Flowercake.jpg
 
 - name: Unicorn Cake
   description: A classic cookie filled with chocolate chips.
   price: 220
-  image: cakes/images/c12_unicorn.jpg
+  image: data/cakes/images/c12_unicorn.jpg
 
 - name: Vancho Cake
   description: A classic cookie filled with chocolate chips.
   price: 225
-  image: cakes/images/c13_Vanchocake.jpg
+  image: data/cakes/images/c13_Vanchocake.jpg
 
 - name: Vanilla Cake
   description: A classic cookie filled with chocolate chips.
   price: 200
-  image: cakes/images/c14_vanillacake.jpg
+  image: data/cakes/images/c14_vanillacake.jpg
 
 - name: White Forest Cake
   description: A classic cookie filled with chocolate chips.
   price: 220
-  image: cakes/images/c15_whiteforest.jpg
+  image: data/cakes/images/c15_whiteforest.jpg
 
 - name: Rosetta Cake
   description: A classic cookie filled with chocolate chips.
   price: 220
-  image: cakes/images/Rc01_Vanilla.jpg
+  image: data/cakes/images/Rc01_Vanilla.jpg
 
 - name: Rosemilk Cake
   description: A classic cookie filled with chocolate chips.
   price: 245
-  image: cakes/images/Rc01_Vanilla.jpg
+  image: data/cakes/images/Rc01_Vanilla.jpg

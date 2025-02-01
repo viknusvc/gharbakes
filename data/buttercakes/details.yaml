@@ -1,49 +1,49 @@
 - name: Almond Flour Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
   price: 160
-  image: buttercakes/images/sp01_almondflourcake.JPG
+  image: data/buttercakes/images/sp01_almondflourcake.JPG
 
 - name: Carrot Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
   price: 140
-  image: buttercakes/images/sp02_carrotcake.jpg
+  image: data/buttercakes/images/sp02_carrotcake.jpg
 
 - name: Chocolate Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
   price: 125
-  image: buttercakes/images/sp03_chocolatecake.JPG
+  image: data/buttercakes/images/sp03_chocolatecake.JPG
 
 - name: Strawberry Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
   price: 125
-  image: buttercakes/images/sp04_Strawberrycake.JPG
+  image: data/buttercakes/images/sp04_Strawberrycake.JPG
 
 - name: Pista Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
   price: 175
-  image: buttercakes/images/sp05_Pistacake.JPG
+  image: data/buttercakes/images/sp05_Pistacake.JPG
 
 - name: Walnut Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
   price: 175
-  image: buttercakes/images/sp06_Walnutcake.JPG
+  image: data/buttercakes/images/sp06_Walnutcake.JPG
 
 - name: Plain Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
   price: 110
-  image: buttercakes/images/sp07_Plain.JPG
+  image: data/buttercakes/images/sp07_Plain.JPG
 
 - name: Almond Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
   price: 160
-  image: buttercakes/images/sp08_almondcake.jpg
+  image: data/buttercakes/images/sp08_almondcake.jpg
 
 - name: Nuts Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
   price: 160
-  image: buttercakes/images/sp09_Nutscake.jpg
+  image: data/buttercakes/images/sp09_Nutscake.jpg
 
 - name: Wheat Dates Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
   price: 140
-  image: buttercakes/images/sp10_Wheatsdatescake.jpg
+  image: data/buttercakes/images/sp10_Wheatsdatescake.jpg

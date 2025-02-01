@@ -1,74 +1,74 @@
 - name: Baby Almond Brownie
   description: A classic cookie filled with chocolate chips.
   price: 280
-  image: brownies/images/Bm01_MiniAlmondBrownie.jpg
+  image: data/brownies/images/Bm01_MiniAlmondBrownie.jpg
 
 - name: Baby Hazelnut Brownie
   description: A classic cookie filled with chocolate chips.
   price: 280
-  image: brownies/images/Bm02_miniHazenutBrownie.jpg
+  image: data/brownies/images/Bm02_miniHazenutBrownie.jpg
 
 - name: Walnut Brownie
   description: A classic cookie filled with chocolate chips.
   price: 280
-  image: brownies/images/br01_WalnutBrownie.jpg
+  image: data/brownies/images/br01_WalnutBrownie.jpg
 
 - name: Nutella Brownie
   description: A classic cookie filled with chocolate chips.
   price: 300
-  image: brownies/images/Br02_NutellaBrownie.JPG
+  image: data/brownies/images/Br02_NutellaBrownie.JPG
 
 - name: Almond Brownie
   description: A classic cookie filled with chocolate chips.
   price: 280
-  image: brownies/images/Br03_AlmondBrownie.jpg
+  image: data/brownies/images/Br03_AlmondBrownie.jpg
 
 - name: Hazelnut Brownie
   description: A classic cookie filled with chocolate chips.
   price: 280
-  image: brownies/images/Br04_HazenutBrownie.jpg
+  image: data/brownies/images/Br04_HazenutBrownie.jpg
 
 - name: Marble Brownie
   description: A classic cookie filled with chocolate chips.
   price: 220
-  image: brownies/images/Br05_MarbleBrownie.jpg
+  image: data/brownies/images/Br05_MarbleBrownie.jpg
 
 - name: Mixed Nuts Brownie
   description: A classic cookie filled with chocolate chips.
   price: 220
-  image: brownies/images/Br05_MarbleBrownie.jpg
+  image: data/brownies/images/Br05_MarbleBrownie.jpg
 
 - name: Chocochip Brownie
   description: A classic cookie filled with chocolate chips.
   price: 280
-  image: brownies/images/Br05_MarbleBrownie.jpg
+  image: data/brownies/images/Br05_MarbleBrownie.jpg
 
 - name: Redvelvet Brownie
   description: A classic cookie filled with chocolate chips.
   price: 320
-  image: brownies/images/Br05_MarbleBrownie.jpg 
+  image: data/brownies/images/Br05_MarbleBrownie.jpg 
 
 - name: Premiums Brownie
   description: A classic cookie filled with chocolate chips.
   price: 350
-  image: brownies/images/Br05_MarbleBrownie.jpg 
+  image: data/brownies/images/Br05_MarbleBrownie.jpg 
 
 - name: Cashew Brownie
   description: A classic cookie filled with chocolate chips.
   price: 280
-  image: brownies/images/Br05_MarbleBrownie.jpg    
+  image: data/brownies/images/Br05_MarbleBrownie.jpg    
 
 - name: Chocolate Overload Brownie
   description: A classic cookie filled with chocolate chips.
   price: 220
-  image: brownies/images/Br05_MarbleBrownie.jpg
+  image: data/brownies/images/Br05_MarbleBrownie.jpg
 
 - name: Oreo Brownie
   description: A classic cookie filled with chocolate chips.
   price: 240
-  image: brownies/images/Br05_MarbleBrownie.jpg 
+  image: data/brownies/images/Br05_MarbleBrownie.jpg 
 
 - name: Cookie Brownie or Brookie
   description: A classic cookie filled with chocolate chips.
   price: 280
-  image: brownies/images/Br05_MarbleBrownie.jpg   
+  image: data/brownies/images/Br05_MarbleBrownie.jpg   
