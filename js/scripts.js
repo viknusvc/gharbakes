@@ -29,7 +29,7 @@ let cart = [];
                 const card = document.createElement('div');
                 card.className = 'card';
         
-                let isCupcake = item.name.toLowerCase().includes("cupcake");
+                const isCupcake = /(cupcake|muffin)s?/i.test(item.name);
                 let quantityStep = isCupcake ? 6 : 0.25; 
                 let minQuantity = isCupcake ? 6 : 0.25;
         
@@ -145,18 +145,27 @@ let cart = [];
             let message = 'Order Details:\n';
             let totalAmount = 0;
             cart.forEach(item => {
-                const totalPrice = (item.price * (item.quantity / 0.25)).toFixed(2);
+                // Determine if the item is a cupcake (or similar) based on its name
+                const isCupcake = /(cupcake|muffin)s?/i.test(item.name);
+                // Adjust quantity display for cupcakes vs other items
+                const quantityUnit = isCupcake ? 6 : 0.25;
+                const totalPrice = (item.price * (item.quantity / quantityUnit)).toFixed(2);
                 totalAmount += parseFloat(totalPrice);
-                message += `${item.name} - ${item.quantity.toFixed(2)} kg - ₹${totalPrice}\n`;
-                });
-                message += `\nTotal Amount: ₹${totalAmount.toFixed(2)}`;
-                const whatsappLink = `https://wa.me/918095096561?text=${encodeURIComponent(message)}`;
-                // Auto-redirect with a 2-second delay
-                setTimeout(() => {
+                // Update the message string
+                message += `${item.name} - ${item.quantity.toFixed(2)} ${isCupcake ? 'qty' : 'kg'} - ₹${totalPrice}\n`;
+            });
+            // Add the total amount
+            message += `\nTotal Amount: ₹${totalAmount.toFixed(2)}`;
+            
+            // WhatsApp link with encoded message
+            const whatsappLink = `https://wa.me/918095096561?text=${encodeURIComponent(message)}`;
+            // Auto-redirect with a 2-second delay
+            setTimeout(() => {
                 window.location.href = whatsappLink;
-                }, 2000); // 2000ms = 2 seconds
-                alert('Redirecting to WhatsApp...');
-                }
+            }, 2000); // 2000ms = 2 seconds
+            // Alert the user
+            alert('Redirecting to WhatsApp...');
+        }
         function clearCart() {
             cart = [];
             viewCart();
