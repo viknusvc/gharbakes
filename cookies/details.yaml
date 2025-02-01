@@ -1,11 +1,11 @@
 - name: Karachi Cookie
   description: A classic cookie filled with chocolate chips.
-  price: 2.5
+  price: 150
   image: cookies/images/c09_KarachiCookies.jpg
 
 - name: Ajwain Cookie
   description: Chewy cookies with oatmeal and raisins.
-  price: 2.0
+  price: 150
   image: cookies/images/co2_Ajwin_Cookies.jpg
 
 - name: Jeera Cookie
@@ -15,7 +15,7 @@
 
 - name: Butter Cookie
   description: Classic buttery cookies made with premium ingredients.
-  price: 150
+  price: 160
   image: cookies/images/co3_ButterCookies.JPG
 
 - name: Chocolate Cookie
@@ -30,17 +30,17 @@
 
 - name: Coconut Cookie
   description: Crunchy coconut cookies with a tropical taste.
-  price: 150
+  price: 200
   image: cookies/images/co6_coconutcookies.jpg
 
 - name: Millet Cookie
   description: A nutritious millet-based cookie.
-  price: 150
+  price: 200
   image: cookies/images/co7_millet_cookies.jpg
 
 - name: Nuts Cookie
   description: Loaded with nuts for a crunchy texture.
-  price: 150
+  price: 225
   image: cookies/images/co7_Nutscookies.jpg
 
 - name: Teether Cookie
@@ -55,25 +55,25 @@
 
 - name: Brownie Cookie
   description: A rich brownie-flavored cookie.
-  price: 150
+  price: 350
   image: cookies/images/ec1_Brownie_Cookies.JPG
 
 - name: ChocoChip Cookie
   description: Classic cookies filled with chocolate chips.
-  price: 150
+  price: 350
   image: cookies/images/ec2_ChocoChipcookies.JPG
 
 - name: Hazelnut ChocoChip Cookie
   description: Chocolate chip cookies with a hazelnut twist.
-  price: 150
+  price: 360
   image: cookies/images/ec3_hazenutcookies.JPG
 
 - name: Wheat ChocoChip Cookie
   description: Whole wheat cookies loaded with chocolate chips.
-  price: 150
+  price: 350
   image: cookies/images/ec4_Wheatchocohipcookies.jpg
 
 - name: Double ChocoChip Cookie
   description: Extra chocolatey cookies with double choco chips.
-  price: 150
+  price: 350
   image: cookies/images/ec5_doublechochipwalnutcookies.jpg
