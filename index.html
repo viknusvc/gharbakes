@@ -1,57 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GharBakes - Home Bakery</title>
+    <title>GharBakes - Launch Page</title>
+    
+    <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/gharbakes_16x16.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/gharbakes_32x32.ico">
     <link rel="icon" type="image/png" sizes="64x64" href="assets/icons/gharbakes_64x64.ico">
-
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script>
-        if (typeof axios === 'undefined') {
-        document.write('<script src="js/axios.min.js"><\/script>');
-        }
-    </script>
-
+    
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Axios for making HTTP requests -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    if (typeof axios === 'undefined') {
+        document.write('<script src="js/axios.min.js"><\/script>');
+    }
+</script>
 
-    <script src="https://cdn.jsdelivr.net/npm/js-yaml/dist/js-yaml.min.js"></script>
-    <script>
-        if (typeof jsyaml === 'undefined') {
+<!-- js-yaml for parsing YAML files -->
+<script src="https://cdn.jsdelivr.net/npm/js-yaml/dist/js-yaml.min.js"></script>
+<script>
+    if (typeof jsyaml === 'undefined') {
         document.write('<script src="js/js-yaml.min.js"><\/script>');
-        }
-    </script>
+    }
+</script>
 
 </head>
 <body>
     <header>
-        Gharbakes - Bakes for your happiness
-        <button class="view-cart-btn" onclick="viewCart()">View Cart</button>
+        <h1>Welcome to GharBakes!</h1>
     </header>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We offer delicious homemade bakes, including cookies, cakes, and more. Explore our range of items and enjoy the taste of happiness!</p>
+    </section>
 
     <div class="buttons">
-        <button onclick="loadCategory('cookies')">Cookies</button>
-        <button onclick="loadCategory('cakes')">Cakes</button>
-        <button onclick="loadCategory('brownies')">Brownies</button>
-        <button onclick="loadCategory('cupcakes')">Cloud Delight Cupcake</button>
-        <button onclick="loadCategory('muffins')">Muffin</button>
-        <button onclick="loadCategory('teacakes')">Chai Bliss</button>
-        <button onclick="loadCategory('buttercakes')">Butter Bliss</button>
-        
-    </div>
-
-    <div class="gallery" id="gallery"></div>
-
-    <div class="cart" id="cartItems" style="display:none;"></div>
-
-    <div class="fixed-buttons">
-        <div class="cart-buttons" id="whatsappAndClearButtons" style="display:none;">
-            <button onclick="clearCart()" id="clearCartButton">Clear Cart</button>
-            <button id="whatsappButton" onclick="sendToWhatsApp()">Send to WhatsApp</button>
-        </div>
+        <button id="check-products-btn">Check Products</button>
     </div>
     <script src="js/scripts.js"></script>
 </body>

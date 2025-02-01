@@ -143,3 +143,39 @@ color: white;
   .view-cart-btn:hover {
     background-color: #5c2a20; /* A slightly lighter shade for hover effect */
   }
+
+  .home-btn {
+    position: fixed;
+    top: 10px;
+    right: 120px; /* Adjusted position to the left of the "View Cart" button */
+    background-color: #3e1f1b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.home-btn:hover {
+    background-color: #5c2a20;
+}
+
+#home-content {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#home-content h2 {
+    color: #333;
+}
+
+#home-content p {
+    color: #666;
+    font-size: 16px;
+}
