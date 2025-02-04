@@ -117,9 +117,9 @@ function viewCart() {
                         <button onclick="updateCartQuantity(${index}, -${stepValue})">-</button>
                         <input type="text" value="${item.quantity}" readonly id="cart-qty-${index}">
                         <button onclick="updateCartQuantity(${index}, ${stepValue})">+</button>
+                        <button onclick="removeCartItem(${index})" class="remove">Remove</button>
                     </div>
                 </div>
-                <button onclick="removeCartItem(${index})" class="remove">Remove</button>
             `;
             cartContainer.appendChild(cartItem);
         });
