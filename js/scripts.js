@@ -187,3 +187,24 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+
+document.querySelectorAll(".faq-question").forEach(button => {
+    button.addEventListener("click", () => {
+        const answer = button.nextElementSibling;
+
+        // Close all other answers
+        document.querySelectorAll(".faq-answer").forEach(a => {
+            if (a !== answer) {
+                a.style.maxHeight = null;
+            }
+        });
+
+        // Toggle the selected answer smoothly
+        if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+        } else {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+    });
+});
