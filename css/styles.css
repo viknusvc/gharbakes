@@ -219,9 +219,12 @@ color: white;
     }
 
     .home-btn, .view-cart-btn {
-        width: 90%;
-        text-align: center;
-        margin-bottom: 10px;
+      position: static; /* Remove fixed position */
+      display: inline-block;
+      width: auto;
+      margin: 10px 5px; /* Ensure some spacing between buttons */
+      padding: 10px 15px;
+      font-size: 14px;
     }
 
     /* Ensure cart doesn't break */
