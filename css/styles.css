@@ -182,26 +182,51 @@ color: white;
 
 /* Responsive adjustment for small screens */
 @media (max-width: 600px) {
-    .home-btn, .view-cart-btn {
-      position: static; /* Remove fixed position */
-      display: inline-block;
-      width: auto;
-      margin: 10px 5px; /* Ensure some spacing between buttons */
-      padding: 10px 15px;
-      font-size: 14px;
+    .cart-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0.5em;
+        gap: 10px;
     }
-  
-    /* Adjust position of buttons on small screens */
+
+    .cart-item img {
+        width: 40px; /* Reduce image size */
+        margin-bottom: 10px;
+    }
+
+    .quantity {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .quantity button {
+        width: 35px; /* Ensure buttons are touch-friendly */
+        font-size: 1em;
+        margin: 5px;
+    }
+
+    .cart-item button.remove {
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    /* Make fixed buttons stack properly */
     .fixed-buttons {
-      position: static; /* Remove fixed positioning */
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      margin-top: 60px; /* Add some space from the top to avoid overlap with header */
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
-  
-    /* Ensure no overlap with header content */
-    body {
-      padding-top: 70px; /* Add space above the body content */
+
+    .home-btn, .view-cart-btn {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 10px;
     }
-  }
+
+    /* Ensure cart doesn't break */
+    .cart-buttons {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
