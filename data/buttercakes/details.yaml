@@ -1,7 +1,7 @@
 - name: Vanilla Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
   price: 125
-  image: data/buttercakes/sp11_VanillaCake.jpg
+  image: data/buttercakes/images/sp11_VanillaCake.jpg
 
 - name: Chocolate Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
