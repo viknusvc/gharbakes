@@ -21,4 +21,19 @@
 - name: Cloud Kiss Nutella Cupcake
   description: A classic cookie filled with chocolate chips.
   price: 400
-  image: data/cupcakes/images/cc05_Nutellacupcake.jpg
+  image: data/cupcakes/images/cc05_Nutellacupcake.JPG
+
+- name: Cloud Kiss Butterscotch Cupcake
+  description: A classic cookie filled with chocolate chips.
+  price: 400
+  image: data/cupcakes/images/cc07_Butterscotchcupcake.JPG
+
+- name: Cloud Kiss Carrot CreamCheese Cupcake
+  description: A classic cookie filled with chocolate chips.
+  price: 400
+  image: data/cupcakes/images/cc06_CarrotCreamCheese.jpg
+
+- name: Cloud Kiss Minion Theme Cupcake
+  description: A classic cookie filled with chocolate chips.
+  price: 400
+  image: data/cupcakes/images/cc07_minionthemecupcake.jpg

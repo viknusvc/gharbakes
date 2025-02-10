@@ -1,12 +1,7 @@
-- name: Almond Flour Chai Bliss Butter Cake
+- name: Vanilla Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
-  price: 160
-  image: data/buttercakes/images/sp01_almondflourcake.JPG
-
-- name: Carrot Chai Bliss Butter Cake
-  description: A classic cookie filled with chocolate chips.
-  price: 140
-  image: data/buttercakes/images/sp02_carrotcake.jpg
+  price: 125
+  image: data/buttercakes/sp11_VanillaCake.jpg
 
 - name: Chocolate Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
@@ -47,3 +42,13 @@
   description: A classic cookie filled with chocolate chips.
   price: 140
   image: data/buttercakes/images/sp10_Wheatsdatescake.jpg
+
+- name: Almond Flour Chai Bliss Butter Cake
+  description: A classic cookie filled with chocolate chips.
+  price: 160
+  image: data/buttercakes/images/sp01_almondflourcake.JPG
+
+- name: Carrot Chai Bliss Butter Cake
+  description: A classic cookie filled with chocolate chips.
+  price: 140
+  image: data/buttercakes/images/sp02_carrotcake.jpg

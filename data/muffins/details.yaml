@@ -17,3 +17,8 @@
   description: A classic cookie filled with chocolate chips.
   price: 400
   image: data/muffins/images/mu04_MarbleMuffin.jpg
+
+- name: Carrot Muffin
+  description: A classic cookie filled with chocolate chips.
+  price: 400
+  image: data/muffins/images/Mu04_CarrotMuffin.jpg
