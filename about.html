@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GharBakes - Launch Page</title>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/gharbakes_16x16.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/gharbakes_32x32.ico">
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/icons/gharbakes_64x64.ico">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Axios for making HTTP requests -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    if (typeof axios === 'undefined') {
+        document.write('<script src="js/axios.min.js"><\/script>');
+    }
+</script>
+
+<!-- js-yaml for parsing YAML files -->
+<script src="https://cdn.jsdelivr.net/npm/js-yaml/dist/js-yaml.min.js"></script>
+<script>
+    if (typeof jsyaml === 'undefined') {
+        document.write('<script src="js/js-yaml.min.js"><\/script>');
+    }
+</script>
+
+    <!-- Open Graph Meta Tags for WhatsApp Sharing -->
+    <meta property="og:title" content="Welcome to GharBakes!">
+    <meta property="og:description" content="We offer delicious homemade bakes, including cookies, cakes, and more. Explore our range of items and enjoy the taste of happiness!">
+    <meta property="og:image" content="https://viknusvc.github.io/gharbakes/assets/logos/gharbakes_cirlce_logo.png">
+    <meta property="og:url" content="https://viknusvc.github.io/gharbakes/">
+    <meta property="og:type" content="website">
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to GharBakes!</h1>
+            <h2>Explore Our Products</h2>
+            <button class="home-btn-1" onclick="window.location.href='index.html'">Home</button>
+            <!-- <button class="about-us-btn-1" onclick="window.location.href='about.html'">About Us</button> -->
+            <!-- <button class="view-cart-btn" onclick="viewCart()">View Cart</button> -->
+    </header>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We offer delicious homemade bakes, including cookies, cakes, and more. Explore our range of items and enjoy the taste of happiness!</p>
+    </section>
+
+    <!-- <div class="buttons">
+        <button id="check-products-btn">Check Products</button>
+    </div> -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <button class="faq-question">What types of baked goods do you offer?</button>
+            <div class="faq-answer">
+                <p>We specialize in homemade cookies, cakes, muffins, and healthy treats for both humans and pets. Check our product list for more details!</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">How do I place an order?</button>
+            <div class="faq-answer">
+                <p>You can place an order directly on our website or by messaging us on WhatsApp/Social Media.</p>
+            </div>
+        </div>    
+
+        <div class="faq-item">
+            <button class="faq-question">Do you take custom orders?</button>
+            <div class="faq-answer">
+                <p>Yes! We accept custom orders for cakes, cookies, and special dietary needs. Just contact us in advance so we can prepare accordingly.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">How far in advance should I place my order?</button>
+            <div class="faq-answer">
+                <p>For standard items, we require at least 24 hours' notice. For custom cakes and bulk orders, please place your order at least 3–5 days in advance.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Do you offer eggless or vegan options?</button>
+            <div class="faq-answer">
+                <p>Absolutely! We provide eggless and vegan options. Let us know your preference when placing an order.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <button class="faq-question">Do you deliver, or is it pickup only?</button>
+            <div class="faq-answer">
+                <p>We offer both delivery and pickup. Delivery charges may apply based on your location.</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <button class="faq-question">What payment methods do you accept?</button>
+            <div class="faq-answer">
+                <p>We accept UPI, bank transfers, and cash on pickup. Online payment links can be shared upon request.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <button class="faq-question">Do you use preservatives in your products?</button>
+            <div class="faq-answer">
+                <p>No, all our baked goods are freshly made without any artificial preservatives or additives.</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <button class="faq-question">How should I store my baked goods?</button>
+            <div class="faq-answer">
+                <p>Most cookies can be stored in an airtight container at room temperature for up to a week. Cakes should be refrigerated and consumed within 2–3 days for the best taste.</p>
+            </div>
+        </div>
+    
+        </div>
+    </section>
+    <div id="cartItems" style="display: none;">
+        <p id="cart-total" style="display: none;">Cart Total: ₹0</p>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

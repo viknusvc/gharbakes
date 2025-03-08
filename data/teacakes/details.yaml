@@ -1,55 +1,74 @@
-
 - name: Vanilla Chai Bliss Cake
-  description: A classic cookie filled with chocolate chips.
-  price: 125
+  description: Subtle vanilla flavors, perfect with chai.
+  price: 110
   image: data/teacakes/images/sp11_VanillaCake.jpg
 
 - name: Chocolate Chai Bliss Cake
-  description: A classic cookie filled with chocolate chips.
-  price: 125
+  description: A rich chocolatey treat for tea-time cravings.
+  price: 120
   image: data/teacakes/images/sp03_chocolatecake.JPG
 
 - name: Strawberry Chai Bliss Cake
-  description: A classic cookie filled with chocolate chips.
-  price: 125
+  description: Sweet and tangy, ideal for a tea-time snack.
+  price: 120
+  image: data/teacakes/images/sp04_Strawberrycake.JPG
+
+- name: Pineapple Chai Bliss Cake
+  description: A fruity, tropical delight for light snacking.
+  price: 120
   image: data/teacakes/images/sp04_Strawberrycake.JPG
 
 - name: Pista Chai Bliss Cake
-  description: A classic cookie filled with chocolate chips.
-  price: 175
+  description:  A unique blend of nutty pistachio and chai essence
+  price: 135
   image: data/teacakes/images/sp05_Pistacake.JPG
 
 - name: Walnut Chai Bliss Cake
-  description: A classic cookie filled with chocolate chips.
-  price: 175
+  description: Crunchy walnuts with a hint of spice.
+  price: 135
   image: data/teacakes/images/sp06_Walnutcake.JPG
 
-- name: Plain Chai Bliss Cake
-  description: A classic cookie filled with chocolate chips.
-  price: 110
+- name: Tutti frutti Chai Bliss Cake
+  description: Colorful, fun, and perfect with evening chai.
+  price: 115
   image: data/teacakes/images/sp07_Plain.JPG
 
 - name: Almond Chai Bliss Cake
-  description: A classic cookie filled with chocolate chips.
-  price: 160
+  description: A light, crisp almond cake with warm tea spices.
+  price: 135
   image: data/teacakes/images/sp08_almondcake.jpg
 
-- name: Nuts Chai Bliss Cake
-  description: A classic cookie filled with chocolate chips.
-  price: 160
+- name: Nutty Chai Bliss Cake
+  description: A crunchy, nut-infused cake perfect with tea.
+  price: 135
   image: data/teacakes/images/sp09_Nutscake.jpg
 
 - name: Wheat Dates Chai Bliss Cake
-  description: A classic cookie filled with chocolate chips.
-  price: 140
+  description: Naturally sweet dates meet warm chai spices for a soft, flavorful tea-time treat! 
+  price: 135
   image: data/teacakes/images/sp10_Wheatsdatescake.jpg
 
 - name: Almond Flour Chai Bliss Cake
-  description: A classic cookie filled with chocolate chips.
+  description: A healthy, nutty cake made for chai breaks.
   price: 160
   image: data/teacakes/images/sp01_almondflourcake.JPG
 
 - name: Carrot Chai Bliss Cake
-  description: A classic cookie filled with chocolate chips.
-  price: 140
+  description:  A warm, spiced carrot treat for tea lovers.
+  price: 135
+  image: data/teacakes/images/sp02_carrotcake.jpg
+
+- name: Pumpkin  Chai Bliss Cake
+  description: A warm, spiced treat with the goodness of pumpkin and a hint of chai, perfect for cozy indulgence! 
+  price: 135
+  image: data/teacakes/images/sp12_Pumpkincake.jpg 
+
+- name: Banana Chai Bliss Cake
+  description:  Naturally sweet banana cake with a chai twist.
+  price: 135
+  image: data/teacakes/images/sp02_carrotcake.jpg
+
+- name: Cinnamon Chai magic Bliss Cake
+  description:  Infused with cinnamon, perfect for cozy moments.
+  price: 135
   image: data/teacakes/images/sp02_carrotcake.jpg

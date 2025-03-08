@@ -1,79 +1,79 @@
 - name: Karachi Cookie
-  description: A classic cookie filled with chocolate chips.
-  price: 150
+  description: A soft, buttery delight with a rich nutty flavor, available with sugar, brown sugar, or jaggery.
+  price: 600
   image: data/cookies/images/c09_KarachiCookies.jpg
 
 - name: Ajwain Cookie
-  description: Chewy cookies with oatmeal and raisins.
-  price: 150
+  description: A savory, spiced delight with the goodness of ajwain, available with mild sweetness as per your liking.
+  price: 600
   image: data/cookies/images/co2_Ajwin_Cookies.jpg
 
 - name: Jeera Cookie
-  description: Jeera Cookies made with maida.
-  price: 150
+  description: Light, crispy, and infused with aromatic cumin flavor, perfectly balanced with your choice of sweetness.
+  price: 600
   image: data/cookies/images/co1_jeera_cookies.jpg
 
 - name: Butter Cookie
-  description: Classic buttery cookies made with premium ingredients.
-  price: 160
+  description: Classic, melt-in-your-mouth buttery goodness, made with your choice of sugar, brown sugar, or jaggery.
+  price: 640
   image: data/cookies/images/co3_ButterCookies.JPG
 
 - name: Chocolate Cookie
-  description: Rich chocolate-flavored cookies for chocolate lovers.
-  price: 150
+  description: Rich, chocolatey indulgence for all the choco lovers, with your preferred sweetener.
+  price: 600
   image: data/cookies/images/co4_ChocolateCookies.jpg
 
 - name: Ragi Chocolate Cookie
-  description: A healthy twist with ragi and chocolate.
-  price: 150
+  description: The perfect mix of nutrition and chocolatey goodness, sweetened just the way you prefer.
+  price: 600
   image: data/cookies/images/co5_Ragichocolatecookies.jpg
 
 - name: Coconut Cookie
-  description: Crunchy coconut cookies with a tropical taste.
-  price: 200
+  description: Crispy, golden cookies packed with tropical coconut flavor, sweetened just the way you like.
+  price: 800
   image: data/cookies/images/co6_coconutcookies.jpg
 
 - name: Millet Cookie
-  description: A nutritious millet-based cookie.
-  price: 200
+  description: A healthy, gluten-free delight with the goodness of millets, made with sugar, brown sugar, or jaggery.
+  price: 800
   image: data/cookies/images/co7_millet_cookies.jpg
 
 - name: Nuts Cookie
-  description: Loaded with nuts for a crunchy texture.
-  price: 225
+  description: Loaded with premium nuts for a rich, nutty taste, customizable with your choice of sweetness.
+  price: 900
   image: data/cookies/images/co7_Nutscookies.jpg
 
 - name: Teether Cookie
-  description: A soft, baby-friendly cookie.
-  price: 150
+  description: Baby-friendly, soft cookies with natural sweetness from jaggery or brown sugar.
+  price: 600
   image: data/cookies/images/co8_Teethercookies.jpg
 
 - name: Wheat Cookie
-  description: Made with whole wheat for a healthier choice.
-  price: 150
+  description: Wholesome, fiber-rich cookies with a delightful crunch, sweetened as per your preference.
+  price: 600
   image: data/cookies/images/co10_WheatCookies.jpg
 
 - name: Brownie Cookie
-  description: A rich brownie-flavored cookie.
-  price: 350
+  description: The best of both worlds—crispy edges like a cookie, fudgy center like a brownie!
+  price: 1400
   image: data/cookies/images/ec1_Brownie_Cookies.JPG
 
 - name: ChocoChip Cookie
-  description: Classic cookies filled with chocolate chips.
-  price: 350
+  description: Classic, timeless, and loaded with chocolate chips—because simple joys are the sweetest!
+  price: 1400
   image: data/cookies/images/ec2_ChocoChipcookies.JPG
 
 - name: Hazelnut ChocoChip Cookie
-  description: Chocolate chip cookies with a hazelnut twist.
-  price: 360
+  description:  Crunchy hazelnuts meet melty chocolate chips for a rich, nutty indulgence!
+  price: 1440
   image: data/cookies/images/ec3_hazenutcookies.JPG
 
 - name: Wheat ChocoChip Cookie
-  description: Whole wheat cookies loaded with chocolate chips.
-  price: 350
+  description: Guilt-free indulgence! Wholesome wheat meets rich chocolate chips for a perfect crunchy-chewy bite!
+  price: 1400
   image: data/cookies/images/ec4_Wheatchocohipcookies.jpg
 
 - name: Double ChocoChip Cookie
-  description: Extra chocolatey cookies with double choco chips.
-  price: 350
+  description: Twice the chocolate, double the happiness! A chocoholic’s dream in every bite!
+  price: 1400
   image: data/cookies/images/ec5_doublechochipwalnutcookies.jpg

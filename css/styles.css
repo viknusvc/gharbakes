@@ -147,7 +147,7 @@ color: white;
   .home-btn {
     position: fixed;
     top: 1px;
-    right: 120px; /* Adjusted position to the left of the "View Cart" button */
+    right: 230px; /* Adjusted position to the left of the "View Cart" button */
     background-color: #3e1f1b;
     color: white;
     border: none;
@@ -161,7 +161,58 @@ color: white;
 .home-btn:hover {
     background-color: #5c2a20;
 }
+.home-btn-1 {
+    position: fixed;
+    top: 1px;
+    right: 20px; /* Adjusted position to the left of the "View Cart" button */
+    background-color: #3e1f1b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 100;
+}
 
+.home-btn:hover-1 {
+    background-color: #5c2a20;
+}
+ .about-us-btn {
+    position: fixed;
+    top: 1px;
+    right: 120px; /* Adjusted position to the left of the "View Cart" button */
+    background-color: #3e1f1b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.about-us-btn:hover {
+    background-color: #5c2a20;
+}
+
+.about-us-btn-1 {
+    position: fixed;
+    top: 1px;
+    right: 10px; /* Adjusted position to the left of the "View Cart" button */
+    background-color: #3e1f1b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.about-us-btn-1:hover {
+    background-color: #5c2a20;
+}
 #home-content {
     background-color: #f8f8f8;
     padding: 20px;
@@ -182,7 +233,7 @@ color: white;
 
 /* Responsive adjustment for small screens */
 @media (max-width: 600px) {
-    .home-btn, .view-cart-btn {
+    .home-btn, .home-btn-1, .view-cart-btn, .about-us-btn, .about-us-btn-1  {
       position: static; /* Remove fixed position */
       display: inline-block;
       width: auto;
@@ -256,3 +307,10 @@ color: white;
 }
 
 
+#cart-total {
+    background-color: #e09e00;
+    padding: 10px;
+    border: 2px solid black;
+    display: inline-block; /* Ensures it wraps the text properly */
+    font-weight: bold;
+}

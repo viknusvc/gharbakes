@@ -1,0 +1,95 @@
+- name: Fruit Letter Cake
+  description: A personalized delight shaped in your favorite letters or numbers, layered with cream and topped with treats!
+  price: 1100
+  image: data/customizedcakes/images/c06_Lettercake.jpg
+  stepval: 0.500
+  stepinc: 0.250
+ 
+- name: Fruit Cake
+  description:  Bursting with natural sweetness! Fruit selection is your choice, and fruit charges vary based on the current market price. A refreshing delight for every occasion!  
+  price: 1100
+  image: data/customizedcakes/images/c07_Fruitcake.jpg
+  stepval: 0.500
+  stepinc: 0.250
+
+- name: Kitkat Cake
+  description: Crunchy on the outside, soft and chocolaty inside—wrapped in KitKats for the ultimate chocolate lover’s dream! 
+  price: 1160
+  image: data/customizedcakes/images/c08_Kitkatcake.jpg
+  stepval: 0.500
+  stepinc: 0.250
+
+- name: Unicorn Cake
+  description:  A magical treat with pastel colors, swirls, and edible sparkle, bringing fairytales to life!
+  price: 880
+  image: data/customizedcakes/images/c12_unicorn.jpg
+  stepval: 0.500
+  stepinc: 0.250
+
+- name: Doll Cake
+  description:  A princess-perfect cake designed like a beautiful doll, making every little girl’s dream come true! 
+  price: 1000
+  image: data/customizedcakes/images/dc01_dollcake.JPG
+  stepval: 0.500
+  stepinc: 0.250
+
+- name: Minion Cake
+  description: Cute, mischievous, and full of joy—just like your favorite minions, but in cake form!
+  price: 1100
+  image: data/customizedcakes/images/dc02Minioncake.jpg
+  stepval: 0.500
+  stepinc: 0.250
+
+- name: Cricket theme Cake
+  description: A dream come true for cricket fans! Designed with edible cricket bats, balls, and field details. Plus, semi-fondant work can be added based on your preference for a perfect customized touch!
+  price: 1100
+  image: data/customizedcakes/images/dc03_cricketthemecake.jpg
+  stepval: 0.500
+  stepinc: 0.250
+
+
+- name: Chess Theme Cake
+  description: A royal treat for chess lovers! ♟️🍰 Made with rich dark chocolate, no added colors, and minimal cream on the board. Plus, customization based on your preference! 
+  price: 900
+  image: data/customizedcakes/images/dc05_Chessthemecake.jpg  
+  stepval: 0.500
+  stepinc: 0.250
+
+
+- name: Customized Two Tier Cake 1
+  description: Double the layers, double the fun! Designed to match any theme for your special celebrations!
+  price: 1300
+  image: data/customizedcakes/images/Dc04_2twiercake1.jpg
+  stepval: 0.750
+  stepinc: 0.250
+
+- name: Customized Two Tier Cake 2
+  description:  Egg or eggless, the choice is yours! 🎂✨ Available in different flavors and fully customized to match your special occasion. Tell us your preference, and we’ll bake it just the way you like! 
+  price: 1200
+  image: data/customizedcakes/images/dc06_2dier cake2.jpg
+  stepval: 0.750
+  stepinc: 0.250
+
+- name: Art Cake
+  description: A masterpiece on a cake, hand-painted with edible colors, bringing creativity and sweetness together
+  price: 250
+  image: data/customizedcakes/images/dc08_cakerartwork.jpg
+
+
+- name: Tall Cake
+  description:  A showstopper! Layers of deliciousness stacked high for extra indulgence. Customize it with your favorite flavors and design!
+  price: 800
+  image: data/customizedcakes/images/dc09_tallcake.jpg
+  stepval: 1 #1 kg
+  stepinc: 0.250
+
+
+- name: Edible sheet cake
+  description: Personalize your cake with edible prints! 🎂📸 Perfect for birthdays, anniversaries, and corporate events.
+  price: 1200
+  image: data/customizedcakes/images/dc10_Ediblesheetcake.jpg
+  stepval: 0.500
+  stepinc: 0.250
+
+
+

@@ -1,79 +1,79 @@
 - name: Brownie
-  description: A classic cookie filled with chocolate chips.
-  price: 200
+  description: Fudgy, rich, and irresistibly chocolatey—pure bliss in every bite!
+  price: 800
   image: data/brownies/images/Br08_Brownie.JPG
 
 - name: Walnut Brownie
-  description: A classic cookie filled with chocolate chips.
-  price: 280
+  description: Classic fudgy brownie loaded with crunchy walnuts for a perfect nutty bite!
+  price: 1120
   image: data/brownies/images/br01_WalnutBrownie.jpg
 
 - name: Nutella Brownie
-  description: A classic cookie filled with chocolate chips.
-  price: 300
+  description: Gooey chocolate brownie swirled with creamy Nutella—hazelnut heaven!
+  price: 1200
   image: data/brownies/images/Br02_NutellaBrownie.JPG
 
 - name: Almond Brownie
-  description: A classic cookie filled with chocolate chips.
-  price: 280
+  description: Soft, dense, and packed with roasted almonds for a delightful crunch!
+  price: 1120
   image: data/brownies/images/Br03_AlmondBrownie.jpg
 
 - name: Hazelnut Brownie
-  description: A classic cookie filled with chocolate chips.
-  price: 280
+  description: Chocolatey richness meets the crunch of hazelnuts—pure indulgence!
+  price: 1120
   image: data/brownies/images/Br04_HazenutBrownie.jpg
 
 - name: Marble Brownie
-  description: A classic cookie filled with chocolate chips.
-  price: 220
+  description:  A perfect swirl of chocolate and vanilla for a visually stunning, tasty delight!
+  price: 880
   image: data/brownies/images/Br05_MarbleBrownie.jpg
 
 - name: Mixed Nuts Brownie
-  description: A classic cookie filled with chocolate chips.
-  price: 220
+  description: A nut lover’s dream! Loaded with a mix of premium nuts for a crunchy, fudgy treat!
+  price: 880
   image: data/brownies/images/Br05_MarbleBrownie.jpg
 
 - name: Chocochip Brownie
-  description: A classic cookie filled with chocolate chips.
-  price: 280
+  description: Classic brownie made extra special with melty chocolate chips in every bite!
+  price: 1120
   image: data/brownies/images/Br05_MarbleBrownie.jpg
 
 - name: Redvelvet Brownie
-  description: A classic cookie filled with chocolate chips.
-  price: 320
+  description: Velvety smooth, lightly chocolatey, and topped with a dreamy red velvet touch!
+  price: 1280
   image: data/brownies/images/Br05_MarbleBrownie.jpg 
 
 - name: Premiums Brownie
-  description: A classic cookie filled with chocolate chips.
-  price: 350
+  description: Ultimate rich, fudgy goodness made with the finest chocolate and premium ingredients!
+  price: 1400
   image: data/brownies/images/Br05_MarbleBrownie.jpg 
 
 - name: Cashew Brownie
-  description: A classic cookie filled with chocolate chips.
-  price: 280
+  description: Buttery cashews meet dense chocolate brownie for a melt-in-mouth experience! 
+  price: 1120
   image: data/brownies/images/Br05_MarbleBrownie.jpg    
 
 - name: Chocolate Overload Brownie
-  description: A classic cookie filled with chocolate chips.
-  price: 220
+  description: Extreme chocolatey delight, loaded with extra choco chunks and drizzle! 
+  price: 880
   image: data/brownies/images/Br05_MarbleBrownie.jpg
 
 - name: Oreo Brownie
-  description: A classic cookie filled with chocolate chips.
-  price: 240
+  description: Fudgy brownie layered with crunchy Oreo goodness—cookies & cream perfection!
+  price: 960
   image: data/brownies/images/Br05_MarbleBrownie.jpg 
 
 - name: Cookie Brownie or Brookie
-  description: A classic cookie filled with chocolate chips.
-  price: 280
+  description: Best of both worlds—soft chewy brownie meets crunchy cookie for double the fun! 
+  price: 1120
   image: data/brownies/images/Br05_MarbleBrownie.jpg  
   
 - name: Baby Almond Brownie
-  description: A classic cookie filled with chocolate chips.
-  price: 280
+  description: Mini delight with the perfect balance of almond crunch & chocolate richness!
+  price: 1120
   image: data/brownies/images/Bm01_MiniAlmondBrownie.jpg
 
 - name: Baby Hazelnut Brownie
-  description: A classic cookie filled with chocolate chips.
-  price: 280
+  description: Tiny but mighty—fudgy brownies packed with hazelnuts for a perfect bite!
+  price: 1120
   image: data/brownies/images/Bm02_miniHazenutBrownie.jpg 

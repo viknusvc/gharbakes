@@ -1,54 +1,54 @@
 - name: Vanilla Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
-  price: 125
+  price: 500
   image: data/buttercakes/images/sp11_VanillaCake.jpg
 
 - name: Chocolate Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
-  price: 125
+  price: 500
   image: data/buttercakes/images/sp03_chocolatecake.JPG
 
 - name: Strawberry Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
-  price: 125
+  price: 500
   image: data/buttercakes/images/sp04_Strawberrycake.JPG
 
 - name: Pista Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
-  price: 175
+  price: 700
   image: data/buttercakes/images/sp05_Pistacake.JPG
 
 - name: Walnut Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
-  price: 175
+  price: 700
   image: data/buttercakes/images/sp06_Walnutcake.JPG
 
 - name: Plain Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
-  price: 110
+  price: 440
   image: data/buttercakes/images/sp07_Plain.JPG
 
 - name: Almond Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
-  price: 160
+  price: 640
   image: data/buttercakes/images/sp08_almondcake.jpg
 
 - name: Nuts Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
-  price: 160
+  price: 640
   image: data/buttercakes/images/sp09_Nutscake.jpg
 
 - name: Wheat Dates Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
-  price: 140
+  price: 560
   image: data/buttercakes/images/sp10_Wheatsdatescake.jpg
 
 - name: Almond Flour Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
-  price: 160
+  price: 640
   image: data/buttercakes/images/sp01_almondflourcake.JPG
 
 - name: Carrot Chai Bliss Butter Cake
   description: A classic cookie filled with chocolate chips.
-  price: 140
+  price: 560
   image: data/buttercakes/images/sp02_carrotcake.jpg

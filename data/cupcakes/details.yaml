@@ -1,39 +1,55 @@
 - name: Cloud Whip Delight Cupcake
-  description: A classic cookie filled with chocolate chips.
-  price: 400
+  description:  Indulgent cupcakes topped with rich and creamy heavy cream, giving you a smooth, melt-in-the-mouth experience!
+  price: 25
   image: data/cupcakes/images/cc01_premium.JPG
+  stepval: 6
+  orderqty: true
 
 - name: Cloud Kiss Vanilla Cupcake
-  description: A classic cookie filled with chocolate chips.
-  price: 400
+  description: Classic, soft, and fluffy—timeless sweetness in every bite!
+  price: 25
   image: data/cupcakes/images/cc02_vanillacupcake.jpg
+  stepval: 6
+  orderqty: true
 
 - name: Cloud Kiss Chocolate Cupcake
-  description: A classic cookie filled with chocolate chips.
-  price: 400
+  description: Rich, moist, and full of chocolatey goodness—pure indulgence!
+  price: 25
   image: data/cupcakes/images/cc03_chocolatecupcake.jpg
+  stepval: 6
+  orderqty: true
 
 - name: Cloud Kiss Chocolate Overload Cupcake
-  description: A classic cookie filled with chocolate chips.
-  price: 400
+  description: A chocoholic’s dream! Layers of chocolate, dripping with even more chocolate!
+  price: 25
   image: data/cupcakes/images/cc04_chocolateoverloadcupcake.jpg
+  stepval: 6
+  orderqty: true
 
 - name: Cloud Kiss Nutella Cupcake
-  description: A classic cookie filled with chocolate chips.
-  price: 400
+  description: Decadent chocolate cake infused with creamy Nutella for a hazelnut-chocolate heaven! 
+  price: 25
   image: data/cupcakes/images/cc05_Nutellacupcake.JPG
+  stepval: 6
+  orderqty: true
 
 - name: Cloud Kiss Butterscotch Cupcake
-  description: A classic cookie filled with chocolate chips.
-  price: 400
+  description: Crunchy caramel bits with a smooth, buttery flavor—sweet and nutty delight
+  price: 25
   image: data/cupcakes/images/cc07_Butterscotchcupcake.JPG
+  stepval: 6
+  orderqty: true
 
 - name: Cloud Kiss Carrot CreamCheese Cupcake
-  description: A classic cookie filled with chocolate chips.
-  price: 400
+  description: Moist carrot cupcake topped with luscious, tangy cream cheese frosting—pure bliss in every bite!
+  price: 25
   image: data/cupcakes/images/cc06_CarrotCreamCheese.jpg
+  stepval: 6
+  orderqty: true
 
 - name: Cloud Kiss Minion Theme Cupcake
-  description: A classic cookie filled with chocolate chips.
-  price: 400
+  description: Cute, fun, and delicious! Perfectly baked cupcakes decorated with your favorite Minion designs for a delightful treat!
+  price: 25
   image: data/cupcakes/images/cc07_minionthemecupcake.jpg
+  stepval: 6
+  orderqty: true

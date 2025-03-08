@@ -1,7 +1,7 @@
-
 - name: Cheese Cake
-  description: A classic cookie filled with chocolate chips.
-  price: 245
+  description: A cheese cake can be served for 3 to 4 members.
+  price: 350
   image: data/cheesecakes/images/cc01_cheesecake.jpg
+  stepval: 1
 
 
