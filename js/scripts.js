@@ -296,6 +296,7 @@ function removeCartItem(index) {
     cart.splice(index, 1);
     saveCartToLocalStorage();
     viewCart();
+    updateCartTotal();
 }
 
 
