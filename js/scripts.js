@@ -8,6 +8,7 @@ let cart = JSON.parse(localStorage.getItem('cart')) || [];
 //     }
 // });
 
+loadCartFromLocalStorage()
 // Function to load a product category when "Check Products" is clicked
 async function loadCategory(category) {
     console.log(`Loading category: ${category}`);
@@ -375,6 +376,10 @@ function clearCart() {
 function saveCartToLocalStorage() {
     localStorage.setItem('cart', JSON.stringify(cart));
 }
+function loadCartFromLocalStorage() {
+    cart = JSON.parse(localStorage.getItem('cart')) || [];
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     const checkProductsBtn = document.getElementById("check-products-btn");
     
