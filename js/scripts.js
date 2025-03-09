@@ -9,8 +9,38 @@ let cart = JSON.parse(localStorage.getItem('cart')) || [];
 // });
 
 loadCartFromLocalStorage()
+
+document.addEventListener("DOMContentLoaded", () => {
+    loadAllCategories(); // Load all items when the page opens
+});
+
+// Load all categories and display all products
+async function loadAllCategories() {
+    console.log("Loading all categories...");
+    const categories = [ "cakes", "brownies", "cookies", "cheesecakes", , "buttercakes","cupcakes", "customizedcakes", "muffins", "teacakes"  ]; // Add all categories here
+    let allItems = [];
+
+    for (const category of categories) {
+        try {
+            const response = await axios.get(`data/${category}/details.yaml`);
+            const data = jsyaml.load(response.data);
+            allItems = [...allItems, ...data]; // Merge products from all categories
+        } catch (error) {
+            console.error(`Error loading ${category}:`, error);
+        }
+    }
+
+    displayItems(allItems);
+    console.log("✅ All categories loaded.");
+}
+
+
 // Function to load a product category when "Check Products" is clicked
 async function loadCategory(category) {
+    if (category === "all") {
+        loadAllCategories();
+        return;
+    }
     console.log(`Loading category: ${category}`);
     try {
         const response = await axios.get(`data/${category}/details.yaml`);
@@ -25,6 +55,8 @@ async function loadCategory(category) {
     document.getElementById('whatsappAndClearButtons').style.display = 'none';
     console.log("Category Loaded. Showing gallery.");
 }
+
+
 function displayItems(items) {
     const gallery = document.getElementById('gallery');
     gallery.innerHTML = '';
@@ -76,11 +108,19 @@ function adjustQuantity(itemName, change, minQuantity) {
         console.error(`❌ No input found for ${itemName}`);
         return;
     }
-    let currentQty = parseFloat(qtyInput.value);
+    // Get initial quantity directly from the input field
+    const initialQty = parseFloat(qtyInput.getAttribute("data-initial")) || parseFloat(qtyInput.value) || minQuantity;
+    
+    // Store the initial value in a data attribute (only once)
+    if (!qtyInput.hasAttribute("data-initial")) {
+        qtyInput.setAttribute("data-initial", initialQty);
+    }    
+   
+    let currentQty = parseFloat(qtyInput.value) || 0;
     currentQty += change;
 
-    if (currentQty < minQuantity) {
-        currentQty = minQuantity; // Prevent going below minimum quantity
+    if (currentQty < initialQty) {
+        currentQty = initialQty; // Prevent going below minimum quantity
     } else {
         currentQty = Math.round(currentQty * 100) / 100; // Keep 2 decimal places
     }
@@ -91,7 +131,18 @@ function adjustQuantity(itemName, change, minQuantity) {
 
 function addToCart(name, image, price, stepval, stepinc, orderqty) {
     const qtyInput = document.getElementById(`qty-${name}`);
+    if (!qtyInput) {
+        console.error(`❌ No input found for ${name}`);
+        return;
+    }
     const quantity = parseFloat(qtyInput.value);
+   // 🚨 Prevent adding if quantity is invalid
+   if (isNaN(quantity) || quantity <= 0) {
+    alert("⚠️ Please select a valid quantity before adding to cart.");
+    return;
+    }
+
+    
 
     const existingItem = cart.find(item => item.name === name);
 
@@ -119,7 +170,7 @@ function addToCart(name, image, price, stepval, stepinc, orderqty) {
         stepinc = stepinc || stepval || 1; 
         cart.push({ name, image, price, quantity, stepval, stepinc, orderqty });
         console.log("🛒 Cart after adding:", cart);
-        alert(`${name} added to cart with ${displayQuantity} ${unitLabel}!`);
+        // alert(`${name} added to cart with ${displayQuantity} ${unitLabel}!`);
         saveCartToLocalStorage();
     }
 }

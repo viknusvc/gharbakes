@@ -39,6 +39,7 @@
     </header>
 
     <div class="buttons">
+        <button onclick="loadCategory('all')">All</button>
         <button onclick="loadCategory('cookies')">Cookies</button>
         <button onclick="loadCategory('cakes')">Cakes</button>
         <button onclick="loadCategory('customizedcakes')">Bake It Your Way</button>
@@ -48,11 +49,10 @@
         <button onclick="loadCategory('teacakes')">Chai Bliss</button>
         <button onclick="loadCategory('buttercakes')">Butter Bliss</button>
     </div>
+    <div class="cart" id="cartItems" ></div>
+    <p id="cart-total">Total: ₹0.00</p>
 
     <div class="gallery" id="gallery"></div>
-
-    <div class="cart" id="cartItems" style="display:none;"></div>
-    <p id="cart-total" style="display:none;">Total: ₹0.00</p>
 
     <div class="fixed-buttons">
         <div class="cart-buttons" id="whatsappAndClearButtons" style="display:none;">

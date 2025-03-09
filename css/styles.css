@@ -16,12 +16,19 @@ header {
     font-size: 0.6em;
 }
 .buttons {
-    margin: 0.01em;
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap if needed */
+    justify-content: center;
+    gap: 5px; /* Reduce the gap between buttons */
+    margin: 0.5em 0; /* Reduce top and bottom space */
 }
 button {
-    margin: 1em;
+    /* margin: 1em;
     padding: 0.5em 1.5em;
-    font-size: 0.9em;
+    font-size: 0.9em; */
+    margin: 5px; /* Reduce spacing between buttons */
+    padding: 6px 12px; /* Smaller padding to reduce height */
+    font-size: 14px; /* Slightly smaller text */
     border: none;
     background-color: #f8b400;
     color: white;
@@ -255,8 +262,31 @@ color: white;
     body {
       padding-top: 70px; /* Add space above the body content */
     }
+    /* Responsive cart total */
+    #cart-total {
+        font-size: 14px; /* Slightly smaller text */
+        padding: 4px 8px; /* Reduce padding */
+        margin-left: 5px; /* Less space next to buttons */
+    }
   }
 
+  @media (max-width: 480px) {
+    .buttons {
+        gap: 3px; /* Reduce spacing further */
+    }
+
+    button {
+        padding: 6px 10px; /* Further reduce padding */
+        font-size: 12px; /* Smaller text for better fit */
+        margin: 3px; /* Less margin */
+    }
+    /* Even smaller cart total for very small screens */
+    #cart-total {
+        font-size: 12px; /* Smaller font */
+        padding: 3px 6px; /* Compact padding */
+        margin-left: 3px; /* Less space */
+    }
+}
 
   .faq {
     max-width: 800px;
@@ -309,7 +339,7 @@ color: white;
 
 #cart-total {
     background-color: #e09e00;
-    padding: 10px;
+    padding: 6px;
     border: 2px solid black;
     display: inline-block; /* Ensures it wraps the text properly */
     font-weight: bold;

@@ -3,117 +3,137 @@
   price: 90
   image: data/muffins/images/Mu01_Vanilla.jpg
   stepval: 6
+  orderqty: true
 
 - name: Vanilla Custard Muffins
   description: Soft vanilla muffin with a creamy custard twist—melt-in-the-mouth indulgence!
   price: 90
   image: data/muffins/images/Mu04_CarrotMuffin.jpg
   stepval: 6
+  orderqty: true
 
 - name: Vanilla Choco Chip Muffin
   description: Classic vanilla meets crunchy choco chips for the perfect balance of sweetness!
   price: 95
   image: data/muffins/images/Mu04_CarrotMuffin.jpg
   stepval: 6
+  orderqty: true
 
 - name: Chocolate Muffin
   description: Rich, moist, and packed with deep chocolatey goodness in every bite!
   price: 100
   image: data/muffins/images/mu03_Chocolatemuffin.jpg
   stepval: 6
+  orderqty: true
 
 - name: Chocolate Lava
   description: Rich, gooey chocolate delight in every bite
   price: 180
   image: data/muffins/images/mu03_Chocolatemuffin.jpg
   stepval: 6
+  orderqty: true
   
 - name: Chocolate Choco Chip Muffin
   description: Double the chocolate, double the joy—soft, fudgy, and loaded with choco chips!
   price: 100
   image: data/muffins/images/Mu05_ChocolatechocochipMuffin.jpg
   stepval: 6
+  orderqty: true
 
 - name: Marble Muffin
   description: A perfect swirl of chocolate and vanilla for a delightful fusion of flavors! 
   price: 100
   image: data/muffins/images/mu04_MarbleMuffin.jpg
   stepval: 6
+  orderqty: true
 
 - name: Dalgona Coffee Muffin 
   description:  A caffeine kick in muffin form, topped with whipped coffee magic!
   price: 100
   image: data/muffins/images/Mu04_CarrotMuffin.jpg
   stepval: 6
+  orderqty: true
 
 - name: Banana Muffin
   description: Naturally sweet and irresistibly soft.
   price: 90
   image: data/muffins/images/MU02_Bananamuffin.jpg
   stepval: 6
+  orderqty: true
 
 - name: Carrot Muffin
   description: Soft, spiced, and naturally sweet with fresh carrots for a wholesome treat!
   price: 95
   image: data/muffins/images/Mu04_CarrotMuffin.jpg
   stepval: 6
+  orderqty: true
 
 - name: Dates Muffin
   description:  Naturally sweetened with dates, offering a rich, caramel-like taste in every bite! 
   price: 95
   image: data/muffins/images/mu06_DatesMuffin.jpg
   stepval: 6
+  orderqty: true
 
 - name: Nuts Muffin
   description:  A mix of crunchy nuts and soft muffin texture.
   price: 95
   image: data/muffins/images/mu07_Nutsmuffin.jpg
   stepval: 6
+  orderqty: true
 
 - name: Pumpkin Muffin
   description: Light, fluffy, and spiced just right—bringing cozy fall vibes in every bite! 
   price: 95
   image: data/muffins/images/mu08_PumpkinMuffin.jpg
   stepval: 6
+  orderqty: true
 
 - name: Tutti Frutti Muffin
   description: Fun, colorful, and full of fruity surprises.
   price: 90
   image: data/muffins/images/mu09_Tuttfruttimuffin.jpg
   stepval: 6
+  orderqty: true
 
 - name: Strawberry Muffin
   description:  Bursting with real strawberries for a fruity, refreshing, and soft delight!  
   price: 95
   image: data/muffins/images/Mu04_CarrotMuffin.jpg
   stepval: 6
+  orderqty: true
 
 - name: Black Currant Muffins
   description: Sweet and tangy black currants in a soft, buttery muffin—perfectly balanced!
   price: 95
   image: data/muffins/images/Mu04_CarrotMuffin.jpg
   stepval: 6
+  orderqty: true
 
 - name: Almond Flour Muffin
   description: A healthy, gluten-free option with a nutty taste..
   price: 250
   image: data/muffins/images/Mu01_Vanilla.jpg
   stepval: 6
+  orderqty: true
 
 - name: Cinnamon Swirl Muffin
   description: Spiced with cinnamon for a cozy treat.
   price: 95
   image: data/muffins/images/Mu01_Vanilla.jpg
   stepval: 6
+  orderqty: true
 
 - name: Spices Muffins
   description: Spiced with cinnamon/dry-ginger/clove.
   price: 95
   image: data/muffins/images/Mu01_Vanilla.jpg
   stepval: 6
+  orderqty: true
 
 - name: Nutmeg Muffins
   description: Vannila touch with pure nutmeg - Great combination with chai.
   price: 95
   image: data/muffins/images/Mu01_Vanilla.jpg
   stepval: 6
+  orderqty: true
